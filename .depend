@@ -1,0 +1,11 @@
+lambdaParser.cmi : lambda.cmo
+infer.cmo : lambdaParser.cmi lambdaLexer.cmo lambda.cmo
+infer.cmx : lambdaParser.cmx lambdaLexer.cmx lambda.cmx
+lambda.cmo :
+lambda.cmx :
+lambdaLexer.cmo : lambdaParser.cmi
+lambdaLexer.cmx : lambdaParser.cmx
+lambdaParser.cmo : lambda.cmo lambdaParser.cmi
+lambdaParser.cmx : lambda.cmx lambdaParser.cmi
+simpleType.cmo : lambda.cmo
+simpleType.cmx : lambda.cmx

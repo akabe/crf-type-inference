@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
+    <style text="text/css">
+     text {
+       font-family: Monospace;
+     }
+     .node:hover ellipse {
+       fill: yellow;
+     }
+     #q {
+       font-family: Monospace;
+       font-size: 1.5em;
+     }
+    </style>
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="viz.js"></script> <!-- https://github.com/mdaines/viz.js -->
+    <script type="text/javascript" src="infer.js"></script>
+    <title>機械学習による関数型ブーリアンプログラムの型推論</title>
+  </head>
+  <body>
+    <h1>機械学習による関数型ブーリアンプログラムの型推論</h1>
+    <form action="index.html">
+      <input id="q" name="q" type="text" size="50">
+      <input type="submit" value="型推論">
+    </form>
+    <div id="graph"></div>
+    </center>
+    <script>
+     // Parse GET query
+     var query = {};
+     if (1 < window.location.search.length) {
+       var str = window.location.search.substring(1); // Remove the first '?'
+       var entries = str.split('&');
+       for (var i = 0; i < entries.length; i++) {
+         var pair = entries[i].split('=');
+         var key = decodeURIComponent(pair[0]);
+         var val = decodeURIComponent(pair[1].replace(/\+/g, ' '));
+         query[key] = val;
+       }
+     }
+
+     $(function () {
+       $("#graph").draggable();
+     });
+
+     if (query["q"]) {
+       $("#q").val(query["q"]);
+       var res = jQuery.parseJSON(CRFInfer(query["q"]));
+       var svg = Viz(res[1], "svg");
+       $("#graph").html(svg);
+     }
+    </script>
+  </body>
+</html>
