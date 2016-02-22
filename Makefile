@@ -1,5 +1,5 @@
 BYTE=infer.byte
-TARGET=infer.js
+TARGET=js/infer.js
 OBJS=misc.cmo lambda.cmo lambdaParser.cmo lambdaLexer.cmo simpleType.cmo crf.cmo infer.ml
 DEPS=lambda.ml simpleType.ml lambdaParser.mly lambdaLexer.mll lambdaParser.ml lambdaLexer.ml
 PKGS=ppx_deriving.show,lwt,js_of_ocaml,js_of_ocaml.ppx

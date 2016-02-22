@@ -1,11 +1,17 @@
 lambdaParser.cmi : lambda.cmo
-infer.cmo : lambdaParser.cmi lambdaLexer.cmo lambda.cmo
-infer.cmx : lambdaParser.cmx lambdaLexer.cmx lambda.cmx
+crf.cmo : misc.cmo lambda.cmo
+crf.cmx : misc.cmx lambda.cmx
+infer.cmo : simpleType.cmo misc.cmo lambdaParser.cmi lambdaLexer.cmo \
+    lambda.cmo crf.cmo
+infer.cmx : simpleType.cmx misc.cmx lambdaParser.cmx lambdaLexer.cmx \
+    lambda.cmx crf.cmx
 lambda.cmo :
 lambda.cmx :
 lambdaLexer.cmo : lambdaParser.cmi
 lambdaLexer.cmx : lambdaParser.cmx
 lambdaParser.cmo : lambda.cmo lambdaParser.cmi
 lambdaParser.cmx : lambda.cmx lambdaParser.cmi
+misc.cmo :
+misc.cmx :
 simpleType.cmo : lambda.cmo
 simpleType.cmx : lambda.cmx

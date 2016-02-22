@@ -2096,7 +2096,7 @@ hH(a){var
 b=eJ(a),d=b[12];b[12]=[0,hI,d[2],d[3],d[4]];try{var
 f=hu(hw,b)}catch(f){f=Q(f);if(f===by){var
 c=b[11],e=b[12][4]-c[3]|0,g=c[4]-c[3]|0,h=c[2],i=c[1];return ar(bb(cV(hJ),i,h,g,e))}throw f}return f}cW.CRFInfer=iv(function(a){var
-m=hH(Y(aY(a),hR));function
+l=hH(Y(aY(a),hR));function
 g(a){return c4(c6,c5,a)}function
 f(a,b){var
 c=b[2];if(typeof
@@ -2116,7 +2116,7 @@ d=[0,e,[2,b[1],c[1]]],f=c[2],h=b[2];return bM([0,d,g(d)+h+f],a)},a,l,m))},Z);def
 n=c[3],o=c[2],p=f(a,c[1]),q=f(a,o),r=f(a,n);return ab(function(f){var
 a=0;return bN(cZ(function(a,b,c,d){var
 e=[0,f,[3,b[1],c[1],d[1]]],h=d[2],i=c[2],j=b[2];return bM([0,e,g(e)+j+i+h],a)},a,p,q,r))},Z)}}var
-b=c1(gZ,f(0,m)),c=b[2],j=b[1],n=Math.exp(c);function
+b=c1(gZ,f(0,l)),c=b[1],m=b[2];function
 i(a){return Math.exp(c4(c6,c5,a))}var
 d=0;function
 e(a,b){var
@@ -2137,8 +2137,8 @@ d=c[2],f=b[2];return a+i([0,e,[2,b[1],c[1]]])*f*d},a,n,o)]},Z);default:var
 p=c[3],q=c[2],r=e(a,c[1]),s=e(a,q),t=e(a,p);return ab(function(e){var
 a=0;return[0,[0,e,[3,d,d,d]],cZ(function(a,b,c,d){var
 f=d[2],g=c[2],h=b[2];return a+i([0,e,[3,b[1],c[1],d[1]]])*h*g*f},a,r,s,t)]},Z)}}var
-k=e(0,j),l=1/h(c0(function(a){return a[2]}),k);function
-o(e,b){var
+j=e(0,c),k=1/h(c0(function(a){return a[2]}),j);function
+n(e,b){var
 c=[0,-1];function
 f(a){c[1]++;return c[1]}function
 d(a,b){var
@@ -2152,4 +2152,4 @@ switch(c[0]){case
 p=c[2],l=c[1],s=c[3],j=f(0),m=f(0),t=g([0,p,[0,l]]),u=d([0,[0,l,m],a],s),v=b[1];h3(al(e,hM),j,av,v,h,m,l,av,p,t,j,m,j,u);return j;case
 2:var
 w=c[2],x=c[1],k=f(0),y=d(a,x),z=d(a,w),A=b[1];h4(al(e,hN),k,av,A,h,k,y,k,z);return k;default:var
-B=c[3],C=c[2],D=c[1],i=f(0),E=d(a,D),F=d(a,C),G=d(a,B),H=b[1];h5(al(e,hO),i,av,H,h,i,E,i,F,i,G);return i}}al(e,hP);d(0,b);return aN(e,hQ)}return b_(gV,gY,[0,[0,B(cV(hS),o,j),c,n,l],gX])});ep(0);return}(function(){return this}()));
+B=c[3],C=c[2],D=c[1],i=f(0),E=d(a,D),F=d(a,C),G=d(a,B),H=b[1];h5(al(e,hO),i,av,H,h,i,E,i,F,i,G);return i}}al(e,hP);d(0,b);return aN(e,hQ)}return b_(gV,gY,[0,[0,B(cV(hS),n,c),m,k],gX])});ep(0);return}(function(){return this}()));

@@ -1,58 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
-    <style text="text/css">
-     text {
-       font-family: Monospace;
-     }
-     .node:hover ellipse {
-       fill: yellow;
-     }
-     #q {
-       font-family: Monospace;
-       font-size: 1.5em;
-     }
-    </style>
-    <script src="jquery-2.2.0.min.js"></script>
-    <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="viz.js"></script> <!-- https://github.com/mdaines/viz.js -->
-    <script type="text/javascript" src="infer.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple Type Inference in Functional Boolean Programs by Machine Learning">
+    <meta name="author" content="Akinori ABE">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
     <title>機械学習による関数型ブーリアンプログラムの型推論</title>
   </head>
-  <body>
-    <h1>機械学習による関数型ブーリアンプログラムの型推論</h1>
-    <form action="index.html">
-      <input id="q" name="q" type="text" size="50">
-      <input type="submit" value="型推論">
-    </form>
-    <div id="graph"></div>
-    </center>
-    <script>
-     // Parse GET query
-     var query = {};
-     if (1 < window.location.search.length) {
-       var str = window.location.search.substring(1); // Remove the first '?'
-       var entries = str.split('&');
-       for (var i = 0; i < entries.length; i++) {
-         var pair = entries[i].split('=');
-         var key = decodeURIComponent(pair[0]);
-         var val = decodeURIComponent(pair[1].replace(/\+/g, ' '));
-         query[key] = val;
-       }
-     }
+  <body data-spy="scroll" data-target="#toc">
+    <!-- the top navigation bar -->
+    <nav id="topnav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <form action="#demo" method="get" class="row">
+          <!--
+          <div class="col-md-1 small-spacing">
+            <div class="dropdown">
+              <button class="btn btn-inverse dropdown-toggle"
+                      type="button" data-toggle="dropdown">
+                Menu&nbsp;<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#syntax">文法</a></li>
+                <li><a href="#demo">デモ</a></li>
+              </ul>
+            </div>
+          </div>
+          -->
+          <!-- Input -->
+          <div class="col-md-10 small-spacing">
+            <input id="q" name="q" type="text" class="form-control"
+                   placeholder="(Untypable) lambda term">
+          </div>
+          <div class="col-md-2 small-spacing">
+            <input type="submit" value="型推論" class="btn btn-primary">
+          </div>
+        </form>
+      </div>
+    </nav>
 
-     $(function () {
-       $("#graph").draggable();
-     });
+    <div class="container">
 
-     if (query["q"]) {
-       $("#q").val(query["q"]);
-       var res = jQuery.parseJSON(CRFInfer(query["q"]));
-       var svg = Viz(res[1], "svg");
-       $("#graph").html(svg);
-     }
-    </script>
+      <h1 class="page-header">機械学習による関数型ブーリアンプログラムの型推論</h1>
+      <p><a href="http://www.jssst.or.jp/">JSSST</a>
+        <a href="http://logic.cs.tsukuba.ac.jp/ppl2016/">PPL2016</a>
+        カテゴリ3（ポスター・デモ発表）</p>
+      <p>静的型付けはプログラムの解析や誤りの検出に有用と考えられているが、一般的に型エラーの位置は曖昧で論理的には一意に特定できない、高度な型システムでは厳密な型検査や型推論が決定不能である、といった問題がある。一方、自然言語処理では多数の実例から統計的手法によりヒューリスティクスを獲得する機械学習が有効であることが知られている。本研究では、通常は形式論理的手法にもとづく型システムに対し、機械学習の統計的手法を導入するアプローチを実験する。具体的には、機械学習のモデルの 1 つである条件付き確率場を用い、簡単な例としてブーリアンラムダ式の単純型推論を試みた。その結果、正しい型付け規則が学習により自動的に選択されることを確認するとともに、通常の形式論理的手法とは異なる規則も学習する場合があることを観察した。</p>
+      <p>発表では、本研究の手法に基づき「well-typedらしさ（あるいはill-typedらしさ）」を構文木のノードごとに実数値でスコア化した一種のsoft typingの<a href="#demo">デモ</a>も行う。</p>
+
+      <p>ブーリアンラムダ式の文法：</p>
+      <pre>
+E   ::=    true                      (* 真 *)
+      |    false                     (* 偽 *)
+      |    x                         (* 変数 *)
+      |    \x. E                     (* ラムダ抽象 *)
+      |    E1 E2                     (* 関数適用 *)
+      |    if E1 then E2 else E3     (* 条件分岐 *)</pre>
+      <p>型注釈：</p>
+      <pre>
+T   ::=    Bool
+      |    Bool -> Bool
+      |    Bool -> Bool -> Bool
+      |    (Bool -> Bool) -> Bool</pre>
+
+      <section>
+        <h2 class="page-link" id="demo">デモ</h2>
+        <p>画面上のテキストボックスに入力されたラムダ式の型推論を行い、
+        構文木の頂点ごとに型と点数（重みと特徴の内積）を表示する。</p>
+        <table class="table table-hover" style="width: auto;">
+          <tr>
+            <td>Log potential (score)</td>
+            <td id="log-potential">N/A</td>
+          </tr>
+          <tr>
+            <td>Potential</td>
+            <td id="potential">N/A</td>
+          </tr>
+          <tr>
+            <td>Conditional probability</td>
+            <td id="probability">N/A</td>
+          </tr>
+        </table>
+        <a id="download">Download .svg</a>
+        <div id="graph"></div>
+      </section>
+    </div>
   </body>
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </html>

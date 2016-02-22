@@ -1,0 +1,59 @@
+.btn-inverse,
+.btn-inverse:active,
+.btn-inverse:focus {
+  background: transparent;
+  color: #cccccc;
+}
+
+.btn-inverse:hover {
+  background: black;
+  color: #cccccc;
+}
+
+
+#topnav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#topnav #q {
+  font-family: Courier New, monospace;
+}
+
+.small-spacing {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+body, #toc {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.page-link {
+  margin-top:-60px;
+  padding-top:60px;
+}
+
+#graph {
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#graph text {
+  font-family: Courier New, monospace;
+  font-size: 0.8em;
+}
+
+#graph .node:hover ellipse {
+  fill: yellow;
+}
+
+#download {
+  display: none;
+}

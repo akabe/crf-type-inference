@@ -142,9 +142,8 @@ let () =
         let str = Js.to_string js_str ^ ";;" in
         let e0 = parse str in
         let lpf = Crf.vertex_log_potential Model.feature Model.weights in
-        let (e1, logpot) = Crf.infer ~types:Model.types lpf e0 in
-        let pot = exp logpot in (* potential *)
+        let (e1, lp) = Crf.infer ~types:Model.types lpf e0 in
         let z =
           Crf.normalizer ~types:Model.types Model.feature Model.weights e1 in
         let dot = asprintf "%a" (pp_dot lpf) e1 in
-        Json.output (dot, logpot, pot, z))
+        Json.output (dot, lp, z))
