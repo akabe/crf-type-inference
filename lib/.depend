@@ -1,0 +1,24 @@
+crf.cmi : simpleType.cmx lambda.cmi
+lambda.cmi :
+lambdaParser.cmi : lambda.cmi
+optimize.cmi : lambda.cmi
+crf.cmo : simpleType.cmx misc.cmx lambda.cmi crf.cmi
+crf.cmx : simpleType.cmx misc.cmx lambda.cmx crf.cmi
+lambda.cmo : lambda.cmi
+lambda.cmx : lambda.cmi
+lambdaLexer.cmo : lambdaParser.cmi
+lambdaLexer.cmx : lambdaParser.cmx
+lambdaParser.cmo : lambda.cmi lambdaParser.cmi
+lambdaParser.cmx : lambda.cmx lambdaParser.cmi
+misc.cmo :
+misc.cmx :
+modelLoader.cmo : simpleType.cmx lambda.cmi
+modelLoader.cmx : simpleType.cmx lambda.cmx
+optimize.cmo : misc.cmx optimize.cmi
+optimize.cmx : misc.cmx optimize.cmi
+simpleType.cmo : lambda.cmi
+simpleType.cmx : lambda.cmx
+utils.cmo : simpleType.cmx optimize.cmi misc.cmx lambdaParser.cmi \
+    lambdaLexer.cmx lambda.cmi crf.cmi
+utils.cmx : simpleType.cmx optimize.cmx misc.cmx lambdaParser.cmx \
+    lambdaLexer.cmx lambda.cmx crf.cmx

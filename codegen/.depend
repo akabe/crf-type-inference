@@ -1,0 +1,5 @@
+type.cmi :
+codegen.cmo : type.cmi
+codegen.cmx : type.cmx
+type.cmo : type.cmi
+type.cmx : type.cmi

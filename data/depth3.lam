@@ -1,0 +1,3151 @@
+(* abs *)
+
+if false then (\x0. true) else (\x0. true) ;;
+
+if false then (\x0. true) else (\x0. false) ;;
+
+if false then (\x0. true) else (\x0. x0) ;;
+
+if false then (\x0. false) else (\x0. true) ;;
+
+if false then (\x0. false) else (\x0. false) ;;
+
+if false then (\x0. false) else (\x0. x0) ;;
+
+if false then (\x0. x0) else (\x0. true) ;;
+
+if false then (\x0. x0) else (\x0. false) ;;
+
+if false then (\x0. x0) else (\x0. x0) ;;
+
+if true then (\x0. true) else (\x0. true) ;;
+
+if true then (\x0. true) else (\x0. false) ;;
+
+if true then (\x0. true) else (\x0. x0) ;;
+
+if true then (\x0. false) else (\x0. true) ;;
+
+if true then (\x0. false) else (\x0. false) ;;
+
+if true then (\x0. false) else (\x0. x0) ;;
+
+if true then (\x0. x0) else (\x0. true) ;;
+
+if true then (\x0. x0) else (\x0. false) ;;
+
+if true then (\x0. x0) else (\x0. x0) ;;
+
+if (if true then true else true) then (\x0. true) else (\x0. true) ;;
+
+if (if true then true else true) then (\x0. true) else (\x0. false) ;;
+
+if (if true then true else true) then (\x0. true) else (\x0. x0) ;;
+
+if (if true then true else true) then (\x0. false) else (\x0. true) ;;
+
+if (if true then true else true) then (\x0. false) else (\x0. false) ;;
+
+if (if true then true else true) then (\x0. false) else (\x0. x0) ;;
+
+if (if true then true else true) then (\x0. x0) else (\x0. true) ;;
+
+if (if true then true else true) then (\x0. x0) else (\x0. false) ;;
+
+if (if true then true else true) then (\x0. x0) else (\x0. x0) ;;
+
+if (if true then true else false) then (\x0. true) else (\x0. true) ;;
+
+if (if true then true else false) then (\x0. true) else (\x0. false) ;;
+
+if (if true then true else false) then (\x0. true) else (\x0. x0) ;;
+
+if (if true then true else false) then (\x0. false) else (\x0. true) ;;
+
+if (if true then true else false) then (\x0. false) else (\x0. false) ;;
+
+if (if true then true else false) then (\x0. false) else (\x0. x0) ;;
+
+if (if true then true else false) then (\x0. x0) else (\x0. true) ;;
+
+if (if true then true else false) then (\x0. x0) else (\x0. false) ;;
+
+if (if true then true else false) then (\x0. x0) else (\x0. x0) ;;
+
+if (if true then false else true) then (\x0. true) else (\x0. true) ;;
+
+if (if true then false else true) then (\x0. true) else (\x0. false) ;;
+
+if (if true then false else true) then (\x0. true) else (\x0. x0) ;;
+
+if (if true then false else true) then (\x0. false) else (\x0. true) ;;
+
+if (if true then false else true) then (\x0. false) else (\x0. false) ;;
+
+if (if true then false else true) then (\x0. false) else (\x0. x0) ;;
+
+if (if true then false else true) then (\x0. x0) else (\x0. true) ;;
+
+if (if true then false else true) then (\x0. x0) else (\x0. false) ;;
+
+if (if true then false else true) then (\x0. x0) else (\x0. x0) ;;
+
+if (if true then false else false) then (\x0. true) else (\x0. true) ;;
+
+if (if true then false else false) then (\x0. true) else (\x0. false) ;;
+
+if (if true then false else false) then (\x0. true) else (\x0. x0) ;;
+
+if (if true then false else false) then (\x0. false) else (\x0. true) ;;
+
+if (if true then false else false) then (\x0. false) else (\x0. false) ;;
+
+if (if true then false else false) then (\x0. false) else (\x0. x0) ;;
+
+if (if true then false else false) then (\x0. x0) else (\x0. true) ;;
+
+if (if true then false else false) then (\x0. x0) else (\x0. false) ;;
+
+if (if true then false else false) then (\x0. x0) else (\x0. x0) ;;
+
+if (if false then true else true) then (\x0. true) else (\x0. true) ;;
+
+if (if false then true else true) then (\x0. true) else (\x0. false) ;;
+
+if (if false then true else true) then (\x0. true) else (\x0. x0) ;;
+
+if (if false then true else true) then (\x0. false) else (\x0. true) ;;
+
+if (if false then true else true) then (\x0. false) else (\x0. false) ;;
+
+if (if false then true else true) then (\x0. false) else (\x0. x0) ;;
+
+if (if false then true else true) then (\x0. x0) else (\x0. true) ;;
+
+if (if false then true else true) then (\x0. x0) else (\x0. false) ;;
+
+if (if false then true else true) then (\x0. x0) else (\x0. x0) ;;
+
+if (if false then true else false) then (\x0. true) else (\x0. true) ;;
+
+if (if false then true else false) then (\x0. true) else (\x0. false) ;;
+
+if (if false then true else false) then (\x0. true) else (\x0. x0) ;;
+
+if (if false then true else false) then (\x0. false) else (\x0. true) ;;
+
+if (if false then true else false) then (\x0. false) else (\x0. false) ;;
+
+if (if false then true else false) then (\x0. false) else (\x0. x0) ;;
+
+if (if false then true else false) then (\x0. x0) else (\x0. true) ;;
+
+if (if false then true else false) then (\x0. x0) else (\x0. false) ;;
+
+if (if false then true else false) then (\x0. x0) else (\x0. x0) ;;
+
+if (if false then false else true) then (\x0. true) else (\x0. true) ;;
+
+if (if false then false else true) then (\x0. true) else (\x0. false) ;;
+
+if (if false then false else true) then (\x0. true) else (\x0. x0) ;;
+
+if (if false then false else true) then (\x0. false) else (\x0. true) ;;
+
+if (if false then false else true) then (\x0. false) else (\x0. false) ;;
+
+if (if false then false else true) then (\x0. false) else (\x0. x0) ;;
+
+if (if false then false else true) then (\x0. x0) else (\x0. true) ;;
+
+if (if false then false else true) then (\x0. x0) else (\x0. false) ;;
+
+if (if false then false else true) then (\x0. x0) else (\x0. x0) ;;
+
+if (if false then false else false) then (\x0. true) else (\x0. true) ;;
+
+if (if false then false else false) then (\x0. true) else (\x0. false) ;;
+
+if (if false then false else false) then (\x0. true) else (\x0. x0) ;;
+
+if (if false then false else false) then (\x0. false) else (\x0. true) ;;
+
+if (if false then false else false) then (\x0. false) else (\x0. false) ;;
+
+if (if false then false else false) then (\x0. false) else (\x0. x0) ;;
+
+if (if false then false else false) then (\x0. x0) else (\x0. true) ;;
+
+if (if false then false else false) then (\x0. x0) else (\x0. false) ;;
+
+if (if false then false else false) then (\x0. x0) else (\x0. x0) ;;
+
+(\x0. x0) (\x0. true) ;;
+
+(\x0. x0) (\x0. false) ;;
+
+(\x0. x0) (\x0. x0) ;;
+
+\x0. \x1. true ;;
+
+\x0. \x1. false ;;
+
+\x0. \x1. x0 ;;
+
+\x0. \x1. x1 ;;
+
+\x0. x0 true ;;
+
+\x0. x0 false ;;
+
+\x0. if true then true else true ;;
+
+\x0. if true then true else false ;;
+
+\x0. if true then true else x0 ;;
+
+\x0. if true then false else true ;;
+
+\x0. if true then false else false ;;
+
+\x0. if true then false else x0 ;;
+
+\x0. if true then x0 else true ;;
+
+\x0. if true then x0 else false ;;
+
+\x0. if true then x0 else x0 ;;
+
+\x0. if false then true else true ;;
+
+\x0. if false then true else false ;;
+
+\x0. if false then true else x0 ;;
+
+\x0. if false then false else true ;;
+
+\x0. if false then false else false ;;
+
+\x0. if false then false else x0 ;;
+
+\x0. if false then x0 else true ;;
+
+\x0. if false then x0 else false ;;
+
+\x0. if false then x0 else x0 ;;
+
+\x0. if x0 then true else true ;;
+
+\x0. if x0 then true else false ;;
+
+\x0. if x0 then true else x0 ;;
+
+\x0. if x0 then false else true ;;
+
+\x0. if x0 then false else false ;;
+
+\x0. if x0 then false else x0 ;;
+
+\x0. if x0 then x0 else true ;;
+
+\x0. if x0 then x0 else false ;;
+
+\x0. if x0 then x0 else x0 ;;
+
+(* true *)
+
+if false then false else if true then true else true ;;
+
+if false then false else if true then true else false ;;
+
+if false then false else if false then true else true ;;
+
+if false then false else if false then false else true ;;
+
+if false then true else if true then true else true ;;
+
+if false then true else if true then true else false ;;
+
+if false then true else if false then true else true ;;
+
+if false then true else if false then false else true ;;
+
+if false then (if true then true else true) else true ;;
+
+if false then (if true then true else true) else if true then true else true ;;
+
+if false then (if true then true else true) else if true then true else false ;;
+
+if false then (if true then true else true) else if false then true else true ;;
+
+if false then (if true then true else true) else
+if false then false else true ;;
+
+if false then (if true then true else false) else true ;;
+
+if false then (if true then true else false) else if true then true else true ;;
+
+if false then (if true then true else false) else
+if true then true else false ;;
+
+if false then (if true then true else false) else
+if false then true else true ;;
+
+if false then (if true then true else false) else
+if false then false else true ;;
+
+if false then (if true then false else true) else true ;;
+
+if false then (if true then false else true) else if true then true else true ;;
+
+if false then (if true then false else true) else
+if true then true else false ;;
+
+if false then (if true then false else true) else
+if false then true else true ;;
+
+if false then (if true then false else true) else
+if false then false else true ;;
+
+if false then (if true then false else false) else true ;;
+
+if false then (if true then false else false) else
+if true then true else true ;;
+
+if false then (if true then false else false) else
+if true then true else false ;;
+
+if false then (if true then false else false) else
+if false then true else true ;;
+
+if false then (if true then false else false) else
+if false then false else true ;;
+
+if false then (if false then true else true) else true ;;
+
+if false then (if false then true else true) else if true then true else true ;;
+
+if false then (if false then true else true) else
+if true then true else false ;;
+
+if false then (if false then true else true) else
+if false then true else true ;;
+
+if false then (if false then true else true) else
+if false then false else true ;;
+
+if false then (if false then true else false) else true ;;
+
+if false then (if false then true else false) else
+if true then true else true ;;
+
+if false then (if false then true else false) else
+if true then true else false ;;
+
+if false then (if false then true else false) else
+if false then true else true ;;
+
+if false then (if false then true else false) else
+if false then false else true ;;
+
+if false then (if false then false else true) else true ;;
+
+if false then (if false then false else true) else
+if true then true else true ;;
+
+if false then (if false then false else true) else
+if true then true else false ;;
+
+if false then (if false then false else true) else
+if false then true else true ;;
+
+if false then (if false then false else true) else
+if false then false else true ;;
+
+if false then (if false then false else false) else true ;;
+
+if false then (if false then false else false) else
+if true then true else true ;;
+
+if false then (if false then false else false) else
+if true then true else false ;;
+
+if false then (if false then false else false) else
+if false then true else true ;;
+
+if false then (if false then false else false) else
+if false then false else true ;;
+
+if true then true else if true then true else true ;;
+
+if true then true else if true then true else false ;;
+
+if true then true else if true then false else true ;;
+
+if true then true else if true then false else false ;;
+
+if true then true else if false then true else true ;;
+
+if true then true else if false then true else false ;;
+
+if true then true else if false then false else true ;;
+
+if true then true else if false then false else false ;;
+
+if true then (if true then true else true) else false ;;
+
+if true then (if true then true else true) else true ;;
+
+if true then (if true then true else true) else if true then true else true ;;
+
+if true then (if true then true else true) else if true then true else false ;;
+
+if true then (if true then true else true) else if true then false else true ;;
+
+if true then (if true then true else true) else if true then false else false ;;
+
+if true then (if true then true else true) else if false then true else true ;;
+
+if true then (if true then true else true) else if false then true else false ;;
+
+if true then (if true then true else true) else if false then false else true ;;
+
+if true then (if true then true else true) else
+if false then false else false ;;
+
+if true then (if true then true else false) else false ;;
+
+if true then (if true then true else false) else true ;;
+
+if true then (if true then true else false) else if true then true else true ;;
+
+if true then (if true then true else false) else if true then true else false ;;
+
+if true then (if true then true else false) else if true then false else true ;;
+
+if true then (if true then true else false) else
+if true then false else false ;;
+
+if true then (if true then true else false) else if false then true else true ;;
+
+if true then (if true then true else false) else
+if false then true else false ;;
+
+if true then (if true then true else false) else
+if false then false else true ;;
+
+if true then (if true then true else false) else
+if false then false else false ;;
+
+if true then (if false then true else true) else false ;;
+
+if true then (if false then true else true) else true ;;
+
+if true then (if false then true else true) else if true then true else true ;;
+
+if true then (if false then true else true) else if true then true else false ;;
+
+if true then (if false then true else true) else if true then false else true ;;
+
+if true then (if false then true else true) else
+if true then false else false ;;
+
+if true then (if false then true else true) else if false then true else true ;;
+
+if true then (if false then true else true) else
+if false then true else false ;;
+
+if true then (if false then true else true) else
+if false then false else true ;;
+
+if true then (if false then true else true) else
+if false then false else false ;;
+
+if true then (if false then false else true) else false ;;
+
+if true then (if false then false else true) else true ;;
+
+if true then (if false then false else true) else if true then true else true ;;
+
+if true then (if false then false else true) else
+if true then true else false ;;
+
+if true then (if false then false else true) else
+if true then false else true ;;
+
+if true then (if false then false else true) else
+if true then false else false ;;
+
+if true then (if false then false else true) else
+if false then true else true ;;
+
+if true then (if false then false else true) else
+if false then true else false ;;
+
+if true then (if false then false else true) else
+if false then false else true ;;
+
+if true then (if false then false else true) else
+if false then false else false ;;
+
+if (if true then true else true) then true else false ;;
+
+if (if true then true else true) then true else true ;;
+
+if (if true then true else true) then true else if true then true else true ;;
+
+if (if true then true else true) then true else if true then true else false ;;
+
+if (if true then true else true) then true else if true then false else true ;;
+
+if (if true then true else true) then true else if true then false else false ;;
+
+if (if true then true else true) then true else if false then true else true ;;
+
+if (if true then true else true) then true else if false then true else false ;;
+
+if (if true then true else true) then true else if false then false else true ;;
+
+if (if true then true else true) then true else
+if false then false else false ;;
+
+if (if true then true else true) then (if true then true else true) else
+false ;;
+
+if (if true then true else true) then (if true then true else true) else true ;;
+
+if (if true then true else true) then (if true then true else true) else
+if true then true else true ;;
+
+if (if true then true else true) then (if true then true else true) else
+if true then true else false ;;
+
+if (if true then true else true) then (if true then true else true) else
+if true then false else true ;;
+
+if (if true then true else true) then (if true then true else true) else
+if true then false else false ;;
+
+if (if true then true else true) then (if true then true else true) else
+if false then true else true ;;
+
+if (if true then true else true) then (if true then true else true) else
+if false then true else false ;;
+
+if (if true then true else true) then (if true then true else true) else
+if false then false else true ;;
+
+if (if true then true else true) then (if true then true else true) else
+if false then false else false ;;
+
+if (if true then true else true) then (if true then true else false) else
+false ;;
+
+if (if true then true else true) then (if true then true else false) else
+true ;;
+
+if (if true then true else true) then (if true then true else false) else
+if true then true else true ;;
+
+if (if true then true else true) then (if true then true else false) else
+if true then true else false ;;
+
+if (if true then true else true) then (if true then true else false) else
+if true then false else true ;;
+
+if (if true then true else true) then (if true then true else false) else
+if true then false else false ;;
+
+if (if true then true else true) then (if true then true else false) else
+if false then true else true ;;
+
+if (if true then true else true) then (if true then true else false) else
+if false then true else false ;;
+
+if (if true then true else true) then (if true then true else false) else
+if false then false else true ;;
+
+if (if true then true else true) then (if true then true else false) else
+if false then false else false ;;
+
+if (if true then true else true) then (if false then true else true) else
+false ;;
+
+if (if true then true else true) then (if false then true else true) else
+true ;;
+
+if (if true then true else true) then (if false then true else true) else
+if true then true else true ;;
+
+if (if true then true else true) then (if false then true else true) else
+if true then true else false ;;
+
+if (if true then true else true) then (if false then true else true) else
+if true then false else true ;;
+
+if (if true then true else true) then (if false then true else true) else
+if true then false else false ;;
+
+if (if true then true else true) then (if false then true else true) else
+if false then true else true ;;
+
+if (if true then true else true) then (if false then true else true) else
+if false then true else false ;;
+
+if (if true then true else true) then (if false then true else true) else
+if false then false else true ;;
+
+if (if true then true else true) then (if false then true else true) else
+if false then false else false ;;
+
+if (if true then true else true) then (if false then false else true) else
+false ;;
+
+if (if true then true else true) then (if false then false else true) else
+true ;;
+
+if (if true then true else true) then (if false then false else true) else
+if true then true else true ;;
+
+if (if true then true else true) then (if false then false else true) else
+if true then true else false ;;
+
+if (if true then true else true) then (if false then false else true) else
+if true then false else true ;;
+
+if (if true then true else true) then (if false then false else true) else
+if true then false else false ;;
+
+if (if true then true else true) then (if false then false else true) else
+if false then true else true ;;
+
+if (if true then true else true) then (if false then false else true) else
+if false then true else false ;;
+
+if (if true then true else true) then (if false then false else true) else
+if false then false else true ;;
+
+if (if true then true else true) then (if false then false else true) else
+if false then false else false ;;
+
+if (if true then true else false) then true else false ;;
+
+if (if true then true else false) then true else true ;;
+
+if (if true then true else false) then true else if true then true else true ;;
+
+if (if true then true else false) then true else if true then true else false ;;
+
+if (if true then true else false) then true else if true then false else true ;;
+
+if (if true then true else false) then true else
+if true then false else false ;;
+
+if (if true then true else false) then true else if false then true else true ;;
+
+if (if true then true else false) then true else
+if false then true else false ;;
+
+if (if true then true else false) then true else
+if false then false else true ;;
+
+if (if true then true else false) then true else
+if false then false else false ;;
+
+if (if true then true else false) then (if true then true else true) else
+false ;;
+
+if (if true then true else false) then (if true then true else true) else
+true ;;
+
+if (if true then true else false) then (if true then true else true) else
+if true then true else true ;;
+
+if (if true then true else false) then (if true then true else true) else
+if true then true else false ;;
+
+if (if true then true else false) then (if true then true else true) else
+if true then false else true ;;
+
+if (if true then true else false) then (if true then true else true) else
+if true then false else false ;;
+
+if (if true then true else false) then (if true then true else true) else
+if false then true else true ;;
+
+if (if true then true else false) then (if true then true else true) else
+if false then true else false ;;
+
+if (if true then true else false) then (if true then true else true) else
+if false then false else true ;;
+
+if (if true then true else false) then (if true then true else true) else
+if false then false else false ;;
+
+if (if true then true else false) then (if true then true else false) else
+false ;;
+
+if (if true then true else false) then (if true then true else false) else
+true ;;
+
+if (if true then true else false) then (if true then true else false) else
+if true then true else true ;;
+
+if (if true then true else false) then (if true then true else false) else
+if true then true else false ;;
+
+if (if true then true else false) then (if true then true else false) else
+if true then false else true ;;
+
+if (if true then true else false) then (if true then true else false) else
+if true then false else false ;;
+
+if (if true then true else false) then (if true then true else false) else
+if false then true else true ;;
+
+if (if true then true else false) then (if true then true else false) else
+if false then true else false ;;
+
+if (if true then true else false) then (if true then true else false) else
+if false then false else true ;;
+
+if (if true then true else false) then (if true then true else false) else
+if false then false else false ;;
+
+if (if true then true else false) then (if false then true else true) else
+false ;;
+
+if (if true then true else false) then (if false then true else true) else
+true ;;
+
+if (if true then true else false) then (if false then true else true) else
+if true then true else true ;;
+
+if (if true then true else false) then (if false then true else true) else
+if true then true else false ;;
+
+if (if true then true else false) then (if false then true else true) else
+if true then false else true ;;
+
+if (if true then true else false) then (if false then true else true) else
+if true then false else false ;;
+
+if (if true then true else false) then (if false then true else true) else
+if false then true else true ;;
+
+if (if true then true else false) then (if false then true else true) else
+if false then true else false ;;
+
+if (if true then true else false) then (if false then true else true) else
+if false then false else true ;;
+
+if (if true then true else false) then (if false then true else true) else
+if false then false else false ;;
+
+if (if true then true else false) then (if false then false else true) else
+false ;;
+
+if (if true then true else false) then (if false then false else true) else
+true ;;
+
+if (if true then true else false) then (if false then false else true) else
+if true then true else true ;;
+
+if (if true then true else false) then (if false then false else true) else
+if true then true else false ;;
+
+if (if true then true else false) then (if false then false else true) else
+if true then false else true ;;
+
+if (if true then true else false) then (if false then false else true) else
+if true then false else false ;;
+
+if (if true then true else false) then (if false then false else true) else
+if false then true else true ;;
+
+if (if true then true else false) then (if false then false else true) else
+if false then true else false ;;
+
+if (if true then true else false) then (if false then false else true) else
+if false then false else true ;;
+
+if (if true then true else false) then (if false then false else true) else
+if false then false else false ;;
+
+if (if true then false else true) then false else true ;;
+
+if (if true then false else true) then false else if true then true else true ;;
+
+if (if true then false else true) then false else
+if true then true else false ;;
+
+if (if true then false else true) then false else
+if false then true else true ;;
+
+if (if true then false else true) then false else
+if false then false else true ;;
+
+if (if true then false else true) then true else true ;;
+
+if (if true then false else true) then true else if true then true else true ;;
+
+if (if true then false else true) then true else if true then true else false ;;
+
+if (if true then false else true) then true else if false then true else true ;;
+
+if (if true then false else true) then true else
+if false then false else true ;;
+
+if (if true then false else true) then (if true then true else true) else
+true ;;
+
+if (if true then false else true) then (if true then true else true) else
+if true then true else true ;;
+
+if (if true then false else true) then (if true then true else true) else
+if true then true else false ;;
+
+if (if true then false else true) then (if true then true else true) else
+if false then true else true ;;
+
+if (if true then false else true) then (if true then true else true) else
+if false then false else true ;;
+
+if (if true then false else true) then (if true then true else false) else
+true ;;
+
+if (if true then false else true) then (if true then true else false) else
+if true then true else true ;;
+
+if (if true then false else true) then (if true then true else false) else
+if true then true else false ;;
+
+if (if true then false else true) then (if true then true else false) else
+if false then true else true ;;
+
+if (if true then false else true) then (if true then true else false) else
+if false then false else true ;;
+
+if (if true then false else true) then (if true then false else true) else
+true ;;
+
+if (if true then false else true) then (if true then false else true) else
+if true then true else true ;;
+
+if (if true then false else true) then (if true then false else true) else
+if true then true else false ;;
+
+if (if true then false else true) then (if true then false else true) else
+if false then true else true ;;
+
+if (if true then false else true) then (if true then false else true) else
+if false then false else true ;;
+
+if (if true then false else true) then (if true then false else false) else
+true ;;
+
+if (if true then false else true) then (if true then false else false) else
+if true then true else true ;;
+
+if (if true then false else true) then (if true then false else false) else
+if true then true else false ;;
+
+if (if true then false else true) then (if true then false else false) else
+if false then true else true ;;
+
+if (if true then false else true) then (if true then false else false) else
+if false then false else true ;;
+
+if (if true then false else true) then (if false then true else true) else
+true ;;
+
+if (if true then false else true) then (if false then true else true) else
+if true then true else true ;;
+
+if (if true then false else true) then (if false then true else true) else
+if true then true else false ;;
+
+if (if true then false else true) then (if false then true else true) else
+if false then true else true ;;
+
+if (if true then false else true) then (if false then true else true) else
+if false then false else true ;;
+
+if (if true then false else true) then (if false then true else false) else
+true ;;
+
+if (if true then false else true) then (if false then true else false) else
+if true then true else true ;;
+
+if (if true then false else true) then (if false then true else false) else
+if true then true else false ;;
+
+if (if true then false else true) then (if false then true else false) else
+if false then true else true ;;
+
+if (if true then false else true) then (if false then true else false) else
+if false then false else true ;;
+
+if (if true then false else true) then (if false then false else true) else
+true ;;
+
+if (if true then false else true) then (if false then false else true) else
+if true then true else true ;;
+
+if (if true then false else true) then (if false then false else true) else
+if true then true else false ;;
+
+if (if true then false else true) then (if false then false else true) else
+if false then true else true ;;
+
+if (if true then false else true) then (if false then false else true) else
+if false then false else true ;;
+
+if (if true then false else true) then (if false then false else false) else
+true ;;
+
+if (if true then false else true) then (if false then false else false) else
+if true then true else true ;;
+
+if (if true then false else true) then (if false then false else false) else
+if true then true else false ;;
+
+if (if true then false else true) then (if false then false else false) else
+if false then true else true ;;
+
+if (if true then false else true) then (if false then false else false) else
+if false then false else true ;;
+
+if (if true then false else false) then false else true ;;
+
+if (if true then false else false) then false else
+if true then true else true ;;
+
+if (if true then false else false) then false else
+if true then true else false ;;
+
+if (if true then false else false) then false else
+if false then true else true ;;
+
+if (if true then false else false) then false else
+if false then false else true ;;
+
+if (if true then false else false) then true else true ;;
+
+if (if true then false else false) then true else if true then true else true ;;
+
+if (if true then false else false) then true else
+if true then true else false ;;
+
+if (if true then false else false) then true else
+if false then true else true ;;
+
+if (if true then false else false) then true else
+if false then false else true ;;
+
+if (if true then false else false) then (if true then true else true) else
+true ;;
+
+if (if true then false else false) then (if true then true else true) else
+if true then true else true ;;
+
+if (if true then false else false) then (if true then true else true) else
+if true then true else false ;;
+
+if (if true then false else false) then (if true then true else true) else
+if false then true else true ;;
+
+if (if true then false else false) then (if true then true else true) else
+if false then false else true ;;
+
+if (if true then false else false) then (if true then true else false) else
+true ;;
+
+if (if true then false else false) then (if true then true else false) else
+if true then true else true ;;
+
+if (if true then false else false) then (if true then true else false) else
+if true then true else false ;;
+
+if (if true then false else false) then (if true then true else false) else
+if false then true else true ;;
+
+if (if true then false else false) then (if true then true else false) else
+if false then false else true ;;
+
+if (if true then false else false) then (if true then false else true) else
+true ;;
+
+if (if true then false else false) then (if true then false else true) else
+if true then true else true ;;
+
+if (if true then false else false) then (if true then false else true) else
+if true then true else false ;;
+
+if (if true then false else false) then (if true then false else true) else
+if false then true else true ;;
+
+if (if true then false else false) then (if true then false else true) else
+if false then false else true ;;
+
+if (if true then false else false) then (if true then false else false) else
+true ;;
+
+if (if true then false else false) then (if true then false else false) else
+if true then true else true ;;
+
+if (if true then false else false) then (if true then false else false) else
+if true then true else false ;;
+
+if (if true then false else false) then (if true then false else false) else
+if false then true else true ;;
+
+if (if true then false else false) then (if true then false else false) else
+if false then false else true ;;
+
+if (if true then false else false) then (if false then true else true) else
+true ;;
+
+if (if true then false else false) then (if false then true else true) else
+if true then true else true ;;
+
+if (if true then false else false) then (if false then true else true) else
+if true then true else false ;;
+
+if (if true then false else false) then (if false then true else true) else
+if false then true else true ;;
+
+if (if true then false else false) then (if false then true else true) else
+if false then false else true ;;
+
+if (if true then false else false) then (if false then true else false) else
+true ;;
+
+if (if true then false else false) then (if false then true else false) else
+if true then true else true ;;
+
+if (if true then false else false) then (if false then true else false) else
+if true then true else false ;;
+
+if (if true then false else false) then (if false then true else false) else
+if false then true else true ;;
+
+if (if true then false else false) then (if false then true else false) else
+if false then false else true ;;
+
+if (if true then false else false) then (if false then false else true) else
+true ;;
+
+if (if true then false else false) then (if false then false else true) else
+if true then true else true ;;
+
+if (if true then false else false) then (if false then false else true) else
+if true then true else false ;;
+
+if (if true then false else false) then (if false then false else true) else
+if false then true else true ;;
+
+if (if true then false else false) then (if false then false else true) else
+if false then false else true ;;
+
+if (if true then false else false) then (if false then false else false) else
+true ;;
+
+if (if true then false else false) then (if false then false else false) else
+if true then true else true ;;
+
+if (if true then false else false) then (if false then false else false) else
+if true then true else false ;;
+
+if (if true then false else false) then (if false then false else false) else
+if false then true else true ;;
+
+if (if true then false else false) then (if false then false else false) else
+if false then false else true ;;
+
+if (if false then true else true) then true else false ;;
+
+if (if false then true else true) then true else true ;;
+
+if (if false then true else true) then true else if true then true else true ;;
+
+if (if false then true else true) then true else if true then true else false ;;
+
+if (if false then true else true) then true else if true then false else true ;;
+
+if (if false then true else true) then true else
+if true then false else false ;;
+
+if (if false then true else true) then true else if false then true else true ;;
+
+if (if false then true else true) then true else
+if false then true else false ;;
+
+if (if false then true else true) then true else
+if false then false else true ;;
+
+if (if false then true else true) then true else
+if false then false else false ;;
+
+if (if false then true else true) then (if true then true else true) else
+false ;;
+
+if (if false then true else true) then (if true then true else true) else
+true ;;
+
+if (if false then true else true) then (if true then true else true) else
+if true then true else true ;;
+
+if (if false then true else true) then (if true then true else true) else
+if true then true else false ;;
+
+if (if false then true else true) then (if true then true else true) else
+if true then false else true ;;
+
+if (if false then true else true) then (if true then true else true) else
+if true then false else false ;;
+
+if (if false then true else true) then (if true then true else true) else
+if false then true else true ;;
+
+if (if false then true else true) then (if true then true else true) else
+if false then true else false ;;
+
+if (if false then true else true) then (if true then true else true) else
+if false then false else true ;;
+
+if (if false then true else true) then (if true then true else true) else
+if false then false else false ;;
+
+if (if false then true else true) then (if true then true else false) else
+false ;;
+
+if (if false then true else true) then (if true then true else false) else
+true ;;
+
+if (if false then true else true) then (if true then true else false) else
+if true then true else true ;;
+
+if (if false then true else true) then (if true then true else false) else
+if true then true else false ;;
+
+if (if false then true else true) then (if true then true else false) else
+if true then false else true ;;
+
+if (if false then true else true) then (if true then true else false) else
+if true then false else false ;;
+
+if (if false then true else true) then (if true then true else false) else
+if false then true else true ;;
+
+if (if false then true else true) then (if true then true else false) else
+if false then true else false ;;
+
+if (if false then true else true) then (if true then true else false) else
+if false then false else true ;;
+
+if (if false then true else true) then (if true then true else false) else
+if false then false else false ;;
+
+if (if false then true else true) then (if false then true else true) else
+false ;;
+
+if (if false then true else true) then (if false then true else true) else
+true ;;
+
+if (if false then true else true) then (if false then true else true) else
+if true then true else true ;;
+
+if (if false then true else true) then (if false then true else true) else
+if true then true else false ;;
+
+if (if false then true else true) then (if false then true else true) else
+if true then false else true ;;
+
+if (if false then true else true) then (if false then true else true) else
+if true then false else false ;;
+
+if (if false then true else true) then (if false then true else true) else
+if false then true else true ;;
+
+if (if false then true else true) then (if false then true else true) else
+if false then true else false ;;
+
+if (if false then true else true) then (if false then true else true) else
+if false then false else true ;;
+
+if (if false then true else true) then (if false then true else true) else
+if false then false else false ;;
+
+if (if false then true else true) then (if false then false else true) else
+false ;;
+
+if (if false then true else true) then (if false then false else true) else
+true ;;
+
+if (if false then true else true) then (if false then false else true) else
+if true then true else true ;;
+
+if (if false then true else true) then (if false then false else true) else
+if true then true else false ;;
+
+if (if false then true else true) then (if false then false else true) else
+if true then false else true ;;
+
+if (if false then true else true) then (if false then false else true) else
+if true then false else false ;;
+
+if (if false then true else true) then (if false then false else true) else
+if false then true else true ;;
+
+if (if false then true else true) then (if false then false else true) else
+if false then true else false ;;
+
+if (if false then true else true) then (if false then false else true) else
+if false then false else true ;;
+
+if (if false then true else true) then (if false then false else true) else
+if false then false else false ;;
+
+if (if false then true else false) then false else true ;;
+
+if (if false then true else false) then false else
+if true then true else true ;;
+
+if (if false then true else false) then false else
+if true then true else false ;;
+
+if (if false then true else false) then false else
+if false then true else true ;;
+
+if (if false then true else false) then false else
+if false then false else true ;;
+
+if (if false then true else false) then true else true ;;
+
+if (if false then true else false) then true else if true then true else true ;;
+
+if (if false then true else false) then true else
+if true then true else false ;;
+
+if (if false then true else false) then true else
+if false then true else true ;;
+
+if (if false then true else false) then true else
+if false then false else true ;;
+
+if (if false then true else false) then (if true then true else true) else
+true ;;
+
+if (if false then true else false) then (if true then true else true) else
+if true then true else true ;;
+
+if (if false then true else false) then (if true then true else true) else
+if true then true else false ;;
+
+if (if false then true else false) then (if true then true else true) else
+if false then true else true ;;
+
+if (if false then true else false) then (if true then true else true) else
+if false then false else true ;;
+
+if (if false then true else false) then (if true then true else false) else
+true ;;
+
+if (if false then true else false) then (if true then true else false) else
+if true then true else true ;;
+
+if (if false then true else false) then (if true then true else false) else
+if true then true else false ;;
+
+if (if false then true else false) then (if true then true else false) else
+if false then true else true ;;
+
+if (if false then true else false) then (if true then true else false) else
+if false then false else true ;;
+
+if (if false then true else false) then (if true then false else true) else
+true ;;
+
+if (if false then true else false) then (if true then false else true) else
+if true then true else true ;;
+
+if (if false then true else false) then (if true then false else true) else
+if true then true else false ;;
+
+if (if false then true else false) then (if true then false else true) else
+if false then true else true ;;
+
+if (if false then true else false) then (if true then false else true) else
+if false then false else true ;;
+
+if (if false then true else false) then (if true then false else false) else
+true ;;
+
+if (if false then true else false) then (if true then false else false) else
+if true then true else true ;;
+
+if (if false then true else false) then (if true then false else false) else
+if true then true else false ;;
+
+if (if false then true else false) then (if true then false else false) else
+if false then true else true ;;
+
+if (if false then true else false) then (if true then false else false) else
+if false then false else true ;;
+
+if (if false then true else false) then (if false then true else true) else
+true ;;
+
+if (if false then true else false) then (if false then true else true) else
+if true then true else true ;;
+
+if (if false then true else false) then (if false then true else true) else
+if true then true else false ;;
+
+if (if false then true else false) then (if false then true else true) else
+if false then true else true ;;
+
+if (if false then true else false) then (if false then true else true) else
+if false then false else true ;;
+
+if (if false then true else false) then (if false then true else false) else
+true ;;
+
+if (if false then true else false) then (if false then true else false) else
+if true then true else true ;;
+
+if (if false then true else false) then (if false then true else false) else
+if true then true else false ;;
+
+if (if false then true else false) then (if false then true else false) else
+if false then true else true ;;
+
+if (if false then true else false) then (if false then true else false) else
+if false then false else true ;;
+
+if (if false then true else false) then (if false then false else true) else
+true ;;
+
+if (if false then true else false) then (if false then false else true) else
+if true then true else true ;;
+
+if (if false then true else false) then (if false then false else true) else
+if true then true else false ;;
+
+if (if false then true else false) then (if false then false else true) else
+if false then true else true ;;
+
+if (if false then true else false) then (if false then false else true) else
+if false then false else true ;;
+
+if (if false then true else false) then (if false then false else false) else
+true ;;
+
+if (if false then true else false) then (if false then false else false) else
+if true then true else true ;;
+
+if (if false then true else false) then (if false then false else false) else
+if true then true else false ;;
+
+if (if false then true else false) then (if false then false else false) else
+if false then true else true ;;
+
+if (if false then true else false) then (if false then false else false) else
+if false then false else true ;;
+
+if (if false then false else true) then true else false ;;
+
+if (if false then false else true) then true else true ;;
+
+if (if false then false else true) then true else if true then true else true ;;
+
+if (if false then false else true) then true else
+if true then true else false ;;
+
+if (if false then false else true) then true else
+if true then false else true ;;
+
+if (if false then false else true) then true else
+if true then false else false ;;
+
+if (if false then false else true) then true else
+if false then true else true ;;
+
+if (if false then false else true) then true else
+if false then true else false ;;
+
+if (if false then false else true) then true else
+if false then false else true ;;
+
+if (if false then false else true) then true else
+if false then false else false ;;
+
+if (if false then false else true) then (if true then true else true) else
+false ;;
+
+if (if false then false else true) then (if true then true else true) else
+true ;;
+
+if (if false then false else true) then (if true then true else true) else
+if true then true else true ;;
+
+if (if false then false else true) then (if true then true else true) else
+if true then true else false ;;
+
+if (if false then false else true) then (if true then true else true) else
+if true then false else true ;;
+
+if (if false then false else true) then (if true then true else true) else
+if true then false else false ;;
+
+if (if false then false else true) then (if true then true else true) else
+if false then true else true ;;
+
+if (if false then false else true) then (if true then true else true) else
+if false then true else false ;;
+
+if (if false then false else true) then (if true then true else true) else
+if false then false else true ;;
+
+if (if false then false else true) then (if true then true else true) else
+if false then false else false ;;
+
+if (if false then false else true) then (if true then true else false) else
+false ;;
+
+if (if false then false else true) then (if true then true else false) else
+true ;;
+
+if (if false then false else true) then (if true then true else false) else
+if true then true else true ;;
+
+if (if false then false else true) then (if true then true else false) else
+if true then true else false ;;
+
+if (if false then false else true) then (if true then true else false) else
+if true then false else true ;;
+
+if (if false then false else true) then (if true then true else false) else
+if true then false else false ;;
+
+if (if false then false else true) then (if true then true else false) else
+if false then true else true ;;
+
+if (if false then false else true) then (if true then true else false) else
+if false then true else false ;;
+
+if (if false then false else true) then (if true then true else false) else
+if false then false else true ;;
+
+if (if false then false else true) then (if true then true else false) else
+if false then false else false ;;
+
+if (if false then false else true) then (if false then true else true) else
+false ;;
+
+if (if false then false else true) then (if false then true else true) else
+true ;;
+
+if (if false then false else true) then (if false then true else true) else
+if true then true else true ;;
+
+if (if false then false else true) then (if false then true else true) else
+if true then true else false ;;
+
+if (if false then false else true) then (if false then true else true) else
+if true then false else true ;;
+
+if (if false then false else true) then (if false then true else true) else
+if true then false else false ;;
+
+if (if false then false else true) then (if false then true else true) else
+if false then true else true ;;
+
+if (if false then false else true) then (if false then true else true) else
+if false then true else false ;;
+
+if (if false then false else true) then (if false then true else true) else
+if false then false else true ;;
+
+if (if false then false else true) then (if false then true else true) else
+if false then false else false ;;
+
+if (if false then false else true) then (if false then false else true) else
+false ;;
+
+if (if false then false else true) then (if false then false else true) else
+true ;;
+
+if (if false then false else true) then (if false then false else true) else
+if true then true else true ;;
+
+if (if false then false else true) then (if false then false else true) else
+if true then true else false ;;
+
+if (if false then false else true) then (if false then false else true) else
+if true then false else true ;;
+
+if (if false then false else true) then (if false then false else true) else
+if true then false else false ;;
+
+if (if false then false else true) then (if false then false else true) else
+if false then true else true ;;
+
+if (if false then false else true) then (if false then false else true) else
+if false then true else false ;;
+
+if (if false then false else true) then (if false then false else true) else
+if false then false else true ;;
+
+if (if false then false else true) then (if false then false else true) else
+if false then false else false ;;
+
+if (if false then false else false) then false else true ;;
+
+if (if false then false else false) then false else
+if true then true else true ;;
+
+if (if false then false else false) then false else
+if true then true else false ;;
+
+if (if false then false else false) then false else
+if false then true else true ;;
+
+if (if false then false else false) then false else
+if false then false else true ;;
+
+if (if false then false else false) then true else true ;;
+
+if (if false then false else false) then true else
+if true then true else true ;;
+
+if (if false then false else false) then true else
+if true then true else false ;;
+
+if (if false then false else false) then true else
+if false then true else true ;;
+
+if (if false then false else false) then true else
+if false then false else true ;;
+
+if (if false then false else false) then (if true then true else true) else
+true ;;
+
+if (if false then false else false) then (if true then true else true) else
+if true then true else true ;;
+
+if (if false then false else false) then (if true then true else true) else
+if true then true else false ;;
+
+if (if false then false else false) then (if true then true else true) else
+if false then true else true ;;
+
+if (if false then false else false) then (if true then true else true) else
+if false then false else true ;;
+
+if (if false then false else false) then (if true then true else false) else
+true ;;
+
+if (if false then false else false) then (if true then true else false) else
+if true then true else true ;;
+
+if (if false then false else false) then (if true then true else false) else
+if true then true else false ;;
+
+if (if false then false else false) then (if true then true else false) else
+if false then true else true ;;
+
+if (if false then false else false) then (if true then true else false) else
+if false then false else true ;;
+
+if (if false then false else false) then (if true then false else true) else
+true ;;
+
+if (if false then false else false) then (if true then false else true) else
+if true then true else true ;;
+
+if (if false then false else false) then (if true then false else true) else
+if true then true else false ;;
+
+if (if false then false else false) then (if true then false else true) else
+if false then true else true ;;
+
+if (if false then false else false) then (if true then false else true) else
+if false then false else true ;;
+
+if (if false then false else false) then (if true then false else false) else
+true ;;
+
+if (if false then false else false) then (if true then false else false) else
+if true then true else true ;;
+
+if (if false then false else false) then (if true then false else false) else
+if true then true else false ;;
+
+if (if false then false else false) then (if true then false else false) else
+if false then true else true ;;
+
+if (if false then false else false) then (if true then false else false) else
+if false then false else true ;;
+
+if (if false then false else false) then (if false then true else true) else
+true ;;
+
+if (if false then false else false) then (if false then true else true) else
+if true then true else true ;;
+
+if (if false then false else false) then (if false then true else true) else
+if true then true else false ;;
+
+if (if false then false else false) then (if false then true else true) else
+if false then true else true ;;
+
+if (if false then false else false) then (if false then true else true) else
+if false then false else true ;;
+
+if (if false then false else false) then (if false then true else false) else
+true ;;
+
+if (if false then false else false) then (if false then true else false) else
+if true then true else true ;;
+
+if (if false then false else false) then (if false then true else false) else
+if true then true else false ;;
+
+if (if false then false else false) then (if false then true else false) else
+if false then true else true ;;
+
+if (if false then false else false) then (if false then true else false) else
+if false then false else true ;;
+
+if (if false then false else false) then (if false then false else true) else
+true ;;
+
+if (if false then false else false) then (if false then false else true) else
+if true then true else true ;;
+
+if (if false then false else false) then (if false then false else true) else
+if true then true else false ;;
+
+if (if false then false else false) then (if false then false else true) else
+if false then true else true ;;
+
+if (if false then false else false) then (if false then false else true) else
+if false then false else true ;;
+
+if (if false then false else false) then (if false then false else false)
+else true ;;
+
+if (if false then false else false) then (if false then false else false)
+else if true then true else true ;;
+
+if (if false then false else false) then (if false then false else false)
+else if true then true else false ;;
+
+if (if false then false else false) then (if false then false else false)
+else if false then true else true ;;
+
+if (if false then false else false) then (if false then false else false)
+else if false then false else true ;;
+
+(\x0. true) false ;;
+
+(\x0. true) true ;;
+
+(\x0. true) (\x0. true) ;;
+
+(\x0. true) (\x0. false) ;;
+
+(\x0. true) (\x0. x0) ;;
+
+(\x0. true) (if true then true else true) ;;
+
+(\x0. true) (if true then true else false) ;;
+
+(\x0. true) (if true then false else true) ;;
+
+(\x0. true) (if true then false else false) ;;
+
+(\x0. true) (if false then true else true) ;;
+
+(\x0. true) (if false then true else false) ;;
+
+(\x0. true) (if false then false else true) ;;
+
+(\x0. true) (if false then false else false) ;;
+
+(\x0. x0) true ;;
+
+(\x0. x0) (if true then true else true) ;;
+
+(\x0. x0) (if true then true else false) ;;
+
+(\x0. x0) (if false then true else true) ;;
+
+(\x0. x0) (if false then false else true) ;;
+
+(* false *)
+
+if false then false else if true then false else true ;;
+
+if false then false else if true then false else false ;;
+
+if false then false else if false then true else false ;;
+
+if false then false else if false then false else false ;;
+
+if false then true else if true then false else true ;;
+
+if false then true else if true then false else false ;;
+
+if false then true else if false then true else false ;;
+
+if false then true else if false then false else false ;;
+
+if false then (if true then true else true) else false ;;
+
+if false then (if true then true else true) else if true then false else true ;;
+
+if false then (if true then true else true) else
+if true then false else false ;;
+
+if false then (if true then true else true) else
+if false then true else false ;;
+
+if false then (if true then true else true) else
+if false then false else false ;;
+
+if false then (if true then true else false) else false ;;
+
+if false then (if true then true else false) else
+if true then false else true ;;
+
+if false then (if true then true else false) else
+if true then false else false ;;
+
+if false then (if true then true else false) else
+if false then true else false ;;
+
+if false then (if true then true else false) else
+if false then false else false ;;
+
+if false then (if true then false else true) else false ;;
+
+if false then (if true then false else true) else
+if true then false else true ;;
+
+if false then (if true then false else true) else
+if true then false else false ;;
+
+if false then (if true then false else true) else
+if false then true else false ;;
+
+if false then (if true then false else true) else
+if false then false else false ;;
+
+if false then (if true then false else false) else false ;;
+
+if false then (if true then false else false) else
+if true then false else true ;;
+
+if false then (if true then false else false) else
+if true then false else false ;;
+
+if false then (if true then false else false) else
+if false then true else false ;;
+
+if false then (if true then false else false) else
+if false then false else false ;;
+
+if false then (if false then true else true) else false ;;
+
+if false then (if false then true else true) else
+if true then false else true ;;
+
+if false then (if false then true else true) else
+if true then false else false ;;
+
+if false then (if false then true else true) else
+if false then true else false ;;
+
+if false then (if false then true else true) else
+if false then false else false ;;
+
+if false then (if false then true else false) else false ;;
+
+if false then (if false then true else false) else
+if true then false else true ;;
+
+if false then (if false then true else false) else
+if true then false else false ;;
+
+if false then (if false then true else false) else
+if false then true else false ;;
+
+if false then (if false then true else false) else
+if false then false else false ;;
+
+if false then (if false then false else true) else false ;;
+
+if false then (if false then false else true) else
+if true then false else true ;;
+
+if false then (if false then false else true) else
+if true then false else false ;;
+
+if false then (if false then false else true) else
+if false then true else false ;;
+
+if false then (if false then false else true) else
+if false then false else false ;;
+
+if false then (if false then false else false) else false ;;
+
+if false then (if false then false else false) else
+if true then false else true ;;
+
+if false then (if false then false else false) else
+if true then false else false ;;
+
+if false then (if false then false else false) else
+if false then true else false ;;
+
+if false then (if false then false else false) else
+if false then false else false ;;
+
+if true then false else if true then true else true ;;
+
+if true then false else if true then true else false ;;
+
+if true then false else if true then false else true ;;
+
+if true then false else if true then false else false ;;
+
+if true then false else if false then true else true ;;
+
+if true then false else if false then true else false ;;
+
+if true then false else if false then false else true ;;
+
+if true then false else if false then false else false ;;
+
+if true then (if true then false else true) else false ;;
+
+if true then (if true then false else true) else true ;;
+
+if true then (if true then false else true) else if true then true else true ;;
+
+if true then (if true then false else true) else if true then true else false ;;
+
+if true then (if true then false else true) else if true then false else true ;;
+
+if true then (if true then false else true) else
+if true then false else false ;;
+
+if true then (if true then false else true) else if false then true else true ;;
+
+if true then (if true then false else true) else
+if false then true else false ;;
+
+if true then (if true then false else true) else
+if false then false else true ;;
+
+if true then (if true then false else true) else
+if false then false else false ;;
+
+if true then (if true then false else false) else false ;;
+
+if true then (if true then false else false) else true ;;
+
+if true then (if true then false else false) else if true then true else true ;;
+
+if true then (if true then false else false) else
+if true then true else false ;;
+
+if true then (if true then false else false) else
+if true then false else true ;;
+
+if true then (if true then false else false) else
+if true then false else false ;;
+
+if true then (if true then false else false) else
+if false then true else true ;;
+
+if true then (if true then false else false) else
+if false then true else false ;;
+
+if true then (if true then false else false) else
+if false then false else true ;;
+
+if true then (if true then false else false) else
+if false then false else false ;;
+
+if true then (if false then true else false) else false ;;
+
+if true then (if false then true else false) else true ;;
+
+if true then (if false then true else false) else if true then true else true ;;
+
+if true then (if false then true else false) else
+if true then true else false ;;
+
+if true then (if false then true else false) else
+if true then false else true ;;
+
+if true then (if false then true else false) else
+if true then false else false ;;
+
+if true then (if false then true else false) else
+if false then true else true ;;
+
+if true then (if false then true else false) else
+if false then true else false ;;
+
+if true then (if false then true else false) else
+if false then false else true ;;
+
+if true then (if false then true else false) else
+if false then false else false ;;
+
+if true then (if false then false else false) else false ;;
+
+if true then (if false then false else false) else true ;;
+
+if true then (if false then false else false) else
+if true then true else true ;;
+
+if true then (if false then false else false) else
+if true then true else false ;;
+
+if true then (if false then false else false) else
+if true then false else true ;;
+
+if true then (if false then false else false) else
+if true then false else false ;;
+
+if true then (if false then false else false) else
+if false then true else true ;;
+
+if true then (if false then false else false) else
+if false then true else false ;;
+
+if true then (if false then false else false) else
+if false then false else true ;;
+
+if true then (if false then false else false) else
+if false then false else false ;;
+
+if (if true then true else true) then false else false ;;
+
+if (if true then true else true) then false else true ;;
+
+if (if true then true else true) then false else if true then true else true ;;
+
+if (if true then true else true) then false else if true then true else false ;;
+
+if (if true then true else true) then false else if true then false else true ;;
+
+if (if true then true else true) then false else
+if true then false else false ;;
+
+if (if true then true else true) then false else if false then true else true ;;
+
+if (if true then true else true) then false else
+if false then true else false ;;
+
+if (if true then true else true) then false else
+if false then false else true ;;
+
+if (if true then true else true) then false else
+if false then false else false ;;
+
+if (if true then true else true) then (if true then false else true) else
+false ;;
+
+if (if true then true else true) then (if true then false else true) else
+true ;;
+
+if (if true then true else true) then (if true then false else true) else
+if true then true else true ;;
+
+if (if true then true else true) then (if true then false else true) else
+if true then true else false ;;
+
+if (if true then true else true) then (if true then false else true) else
+if true then false else true ;;
+
+if (if true then true else true) then (if true then false else true) else
+if true then false else false ;;
+
+if (if true then true else true) then (if true then false else true) else
+if false then true else true ;;
+
+if (if true then true else true) then (if true then false else true) else
+if false then true else false ;;
+
+if (if true then true else true) then (if true then false else true) else
+if false then false else true ;;
+
+if (if true then true else true) then (if true then false else true) else
+if false then false else false ;;
+
+if (if true then true else true) then (if true then false else false) else
+false ;;
+
+if (if true then true else true) then (if true then false else false) else
+true ;;
+
+if (if true then true else true) then (if true then false else false) else
+if true then true else true ;;
+
+if (if true then true else true) then (if true then false else false) else
+if true then true else false ;;
+
+if (if true then true else true) then (if true then false else false) else
+if true then false else true ;;
+
+if (if true then true else true) then (if true then false else false) else
+if true then false else false ;;
+
+if (if true then true else true) then (if true then false else false) else
+if false then true else true ;;
+
+if (if true then true else true) then (if true then false else false) else
+if false then true else false ;;
+
+if (if true then true else true) then (if true then false else false) else
+if false then false else true ;;
+
+if (if true then true else true) then (if true then false else false) else
+if false then false else false ;;
+
+if (if true then true else true) then (if false then true else false) else
+false ;;
+
+if (if true then true else true) then (if false then true else false) else
+true ;;
+
+if (if true then true else true) then (if false then true else false) else
+if true then true else true ;;
+
+if (if true then true else true) then (if false then true else false) else
+if true then true else false ;;
+
+if (if true then true else true) then (if false then true else false) else
+if true then false else true ;;
+
+if (if true then true else true) then (if false then true else false) else
+if true then false else false ;;
+
+if (if true then true else true) then (if false then true else false) else
+if false then true else true ;;
+
+if (if true then true else true) then (if false then true else false) else
+if false then true else false ;;
+
+if (if true then true else true) then (if false then true else false) else
+if false then false else true ;;
+
+if (if true then true else true) then (if false then true else false) else
+if false then false else false ;;
+
+if (if true then true else true) then (if false then false else false) else
+false ;;
+
+if (if true then true else true) then (if false then false else false) else
+true ;;
+
+if (if true then true else true) then (if false then false else false) else
+if true then true else true ;;
+
+if (if true then true else true) then (if false then false else false) else
+if true then true else false ;;
+
+if (if true then true else true) then (if false then false else false) else
+if true then false else true ;;
+
+if (if true then true else true) then (if false then false else false) else
+if true then false else false ;;
+
+if (if true then true else true) then (if false then false else false) else
+if false then true else true ;;
+
+if (if true then true else true) then (if false then false else false) else
+if false then true else false ;;
+
+if (if true then true else true) then (if false then false else false) else
+if false then false else true ;;
+
+if (if true then true else true) then (if false then false else false) else
+if false then false else false ;;
+
+if (if true then true else false) then false else false ;;
+
+if (if true then true else false) then false else true ;;
+
+if (if true then true else false) then false else if true then true else true ;;
+
+if (if true then true else false) then false else
+if true then true else false ;;
+
+if (if true then true else false) then false else
+if true then false else true ;;
+
+if (if true then true else false) then false else
+if true then false else false ;;
+
+if (if true then true else false) then false else
+if false then true else true ;;
+
+if (if true then true else false) then false else
+if false then true else false ;;
+
+if (if true then true else false) then false else
+if false then false else true ;;
+
+if (if true then true else false) then false else
+if false then false else false ;;
+
+if (if true then true else false) then (if true then false else true) else
+false ;;
+
+if (if true then true else false) then (if true then false else true) else
+true ;;
+
+if (if true then true else false) then (if true then false else true) else
+if true then true else true ;;
+
+if (if true then true else false) then (if true then false else true) else
+if true then true else false ;;
+
+if (if true then true else false) then (if true then false else true) else
+if true then false else true ;;
+
+if (if true then true else false) then (if true then false else true) else
+if true then false else false ;;
+
+if (if true then true else false) then (if true then false else true) else
+if false then true else true ;;
+
+if (if true then true else false) then (if true then false else true) else
+if false then true else false ;;
+
+if (if true then true else false) then (if true then false else true) else
+if false then false else true ;;
+
+if (if true then true else false) then (if true then false else true) else
+if false then false else false ;;
+
+if (if true then true else false) then (if true then false else false) else
+false ;;
+
+if (if true then true else false) then (if true then false else false) else
+true ;;
+
+if (if true then true else false) then (if true then false else false) else
+if true then true else true ;;
+
+if (if true then true else false) then (if true then false else false) else
+if true then true else false ;;
+
+if (if true then true else false) then (if true then false else false) else
+if true then false else true ;;
+
+if (if true then true else false) then (if true then false else false) else
+if true then false else false ;;
+
+if (if true then true else false) then (if true then false else false) else
+if false then true else true ;;
+
+if (if true then true else false) then (if true then false else false) else
+if false then true else false ;;
+
+if (if true then true else false) then (if true then false else false) else
+if false then false else true ;;
+
+if (if true then true else false) then (if true then false else false) else
+if false then false else false ;;
+
+if (if true then true else false) then (if false then true else false) else
+false ;;
+
+if (if true then true else false) then (if false then true else false) else
+true ;;
+
+if (if true then true else false) then (if false then true else false) else
+if true then true else true ;;
+
+if (if true then true else false) then (if false then true else false) else
+if true then true else false ;;
+
+if (if true then true else false) then (if false then true else false) else
+if true then false else true ;;
+
+if (if true then true else false) then (if false then true else false) else
+if true then false else false ;;
+
+if (if true then true else false) then (if false then true else false) else
+if false then true else true ;;
+
+if (if true then true else false) then (if false then true else false) else
+if false then true else false ;;
+
+if (if true then true else false) then (if false then true else false) else
+if false then false else true ;;
+
+if (if true then true else false) then (if false then true else false) else
+if false then false else false ;;
+
+if (if true then true else false) then (if false then false else false) else
+false ;;
+
+if (if true then true else false) then (if false then false else false) else
+true ;;
+
+if (if true then true else false) then (if false then false else false) else
+if true then true else true ;;
+
+if (if true then true else false) then (if false then false else false) else
+if true then true else false ;;
+
+if (if true then true else false) then (if false then false else false) else
+if true then false else true ;;
+
+if (if true then true else false) then (if false then false else false) else
+if true then false else false ;;
+
+if (if true then true else false) then (if false then false else false) else
+if false then true else true ;;
+
+if (if true then true else false) then (if false then false else false) else
+if false then true else false ;;
+
+if (if true then true else false) then (if false then false else false) else
+if false then false else true ;;
+
+if (if true then true else false) then (if false then false else false) else
+if false then false else false ;;
+
+if (if true then false else true) then false else false ;;
+
+if (if true then false else true) then false else
+if true then false else true ;;
+
+if (if true then false else true) then false else
+if true then false else false ;;
+
+if (if true then false else true) then false else
+if false then true else false ;;
+
+if (if true then false else true) then false else
+if false then false else false ;;
+
+if (if true then false else true) then true else false ;;
+
+if (if true then false else true) then true else if true then false else true ;;
+
+if (if true then false else true) then true else
+if true then false else false ;;
+
+if (if true then false else true) then true else
+if false then true else false ;;
+
+if (if true then false else true) then true else
+if false then false else false ;;
+
+if (if true then false else true) then (if true then true else true) else
+false ;;
+
+if (if true then false else true) then (if true then true else true) else
+if true then false else true ;;
+
+if (if true then false else true) then (if true then true else true) else
+if true then false else false ;;
+
+if (if true then false else true) then (if true then true else true) else
+if false then true else false ;;
+
+if (if true then false else true) then (if true then true else true) else
+if false then false else false ;;
+
+if (if true then false else true) then (if true then true else false) else
+false ;;
+
+if (if true then false else true) then (if true then true else false) else
+if true then false else true ;;
+
+if (if true then false else true) then (if true then true else false) else
+if true then false else false ;;
+
+if (if true then false else true) then (if true then true else false) else
+if false then true else false ;;
+
+if (if true then false else true) then (if true then true else false) else
+if false then false else false ;;
+
+if (if true then false else true) then (if true then false else true) else
+false ;;
+
+if (if true then false else true) then (if true then false else true) else
+if true then false else true ;;
+
+if (if true then false else true) then (if true then false else true) else
+if true then false else false ;;
+
+if (if true then false else true) then (if true then false else true) else
+if false then true else false ;;
+
+if (if true then false else true) then (if true then false else true) else
+if false then false else false ;;
+
+if (if true then false else true) then (if true then false else false) else
+false ;;
+
+if (if true then false else true) then (if true then false else false) else
+if true then false else true ;;
+
+if (if true then false else true) then (if true then false else false) else
+if true then false else false ;;
+
+if (if true then false else true) then (if true then false else false) else
+if false then true else false ;;
+
+if (if true then false else true) then (if true then false else false) else
+if false then false else false ;;
+
+if (if true then false else true) then (if false then true else true) else
+false ;;
+
+if (if true then false else true) then (if false then true else true) else
+if true then false else true ;;
+
+if (if true then false else true) then (if false then true else true) else
+if true then false else false ;;
+
+if (if true then false else true) then (if false then true else true) else
+if false then true else false ;;
+
+if (if true then false else true) then (if false then true else true) else
+if false then false else false ;;
+
+if (if true then false else true) then (if false then true else false) else
+false ;;
+
+if (if true then false else true) then (if false then true else false) else
+if true then false else true ;;
+
+if (if true then false else true) then (if false then true else false) else
+if true then false else false ;;
+
+if (if true then false else true) then (if false then true else false) else
+if false then true else false ;;
+
+if (if true then false else true) then (if false then true else false) else
+if false then false else false ;;
+
+if (if true then false else true) then (if false then false else true) else
+false ;;
+
+if (if true then false else true) then (if false then false else true) else
+if true then false else true ;;
+
+if (if true then false else true) then (if false then false else true) else
+if true then false else false ;;
+
+if (if true then false else true) then (if false then false else true) else
+if false then true else false ;;
+
+if (if true then false else true) then (if false then false else true) else
+if false then false else false ;;
+
+if (if true then false else true) then (if false then false else false) else
+false ;;
+
+if (if true then false else true) then (if false then false else false) else
+if true then false else true ;;
+
+if (if true then false else true) then (if false then false else false) else
+if true then false else false ;;
+
+if (if true then false else true) then (if false then false else false) else
+if false then true else false ;;
+
+if (if true then false else true) then (if false then false else false) else
+if false then false else false ;;
+
+if (if true then false else false) then false else false ;;
+
+if (if true then false else false) then false else
+if true then false else true ;;
+
+if (if true then false else false) then false else
+if true then false else false ;;
+
+if (if true then false else false) then false else
+if false then true else false ;;
+
+if (if true then false else false) then false else
+if false then false else false ;;
+
+if (if true then false else false) then true else false ;;
+
+if (if true then false else false) then true else
+if true then false else true ;;
+
+if (if true then false else false) then true else
+if true then false else false ;;
+
+if (if true then false else false) then true else
+if false then true else false ;;
+
+if (if true then false else false) then true else
+if false then false else false ;;
+
+if (if true then false else false) then (if true then true else true) else
+false ;;
+
+if (if true then false else false) then (if true then true else true) else
+if true then false else true ;;
+
+if (if true then false else false) then (if true then true else true) else
+if true then false else false ;;
+
+if (if true then false else false) then (if true then true else true) else
+if false then true else false ;;
+
+if (if true then false else false) then (if true then true else true) else
+if false then false else false ;;
+
+if (if true then false else false) then (if true then true else false) else
+false ;;
+
+if (if true then false else false) then (if true then true else false) else
+if true then false else true ;;
+
+if (if true then false else false) then (if true then true else false) else
+if true then false else false ;;
+
+if (if true then false else false) then (if true then true else false) else
+if false then true else false ;;
+
+if (if true then false else false) then (if true then true else false) else
+if false then false else false ;;
+
+if (if true then false else false) then (if true then false else true) else
+false ;;
+
+if (if true then false else false) then (if true then false else true) else
+if true then false else true ;;
+
+if (if true then false else false) then (if true then false else true) else
+if true then false else false ;;
+
+if (if true then false else false) then (if true then false else true) else
+if false then true else false ;;
+
+if (if true then false else false) then (if true then false else true) else
+if false then false else false ;;
+
+if (if true then false else false) then (if true then false else false) else
+false ;;
+
+if (if true then false else false) then (if true then false else false) else
+if true then false else true ;;
+
+if (if true then false else false) then (if true then false else false) else
+if true then false else false ;;
+
+if (if true then false else false) then (if true then false else false) else
+if false then true else false ;;
+
+if (if true then false else false) then (if true then false else false) else
+if false then false else false ;;
+
+if (if true then false else false) then (if false then true else true) else
+false ;;
+
+if (if true then false else false) then (if false then true else true) else
+if true then false else true ;;
+
+if (if true then false else false) then (if false then true else true) else
+if true then false else false ;;
+
+if (if true then false else false) then (if false then true else true) else
+if false then true else false ;;
+
+if (if true then false else false) then (if false then true else true) else
+if false then false else false ;;
+
+if (if true then false else false) then (if false then true else false) else
+false ;;
+
+if (if true then false else false) then (if false then true else false) else
+if true then false else true ;;
+
+if (if true then false else false) then (if false then true else false) else
+if true then false else false ;;
+
+if (if true then false else false) then (if false then true else false) else
+if false then true else false ;;
+
+if (if true then false else false) then (if false then true else false) else
+if false then false else false ;;
+
+if (if true then false else false) then (if false then false else true) else
+false ;;
+
+if (if true then false else false) then (if false then false else true) else
+if true then false else true ;;
+
+if (if true then false else false) then (if false then false else true) else
+if true then false else false ;;
+
+if (if true then false else false) then (if false then false else true) else
+if false then true else false ;;
+
+if (if true then false else false) then (if false then false else true) else
+if false then false else false ;;
+
+if (if true then false else false) then (if false then false else false) else
+false ;;
+
+if (if true then false else false) then (if false then false else false) else
+if true then false else true ;;
+
+if (if true then false else false) then (if false then false else false) else
+if true then false else false ;;
+
+if (if true then false else false) then (if false then false else false) else
+if false then true else false ;;
+
+if (if true then false else false) then (if false then false else false) else
+if false then false else false ;;
+
+if (if false then true else true) then false else false ;;
+
+if (if false then true else true) then false else true ;;
+
+if (if false then true else true) then false else if true then true else true ;;
+
+if (if false then true else true) then false else
+if true then true else false ;;
+
+if (if false then true else true) then false else
+if true then false else true ;;
+
+if (if false then true else true) then false else
+if true then false else false ;;
+
+if (if false then true else true) then false else
+if false then true else true ;;
+
+if (if false then true else true) then false else
+if false then true else false ;;
+
+if (if false then true else true) then false else
+if false then false else true ;;
+
+if (if false then true else true) then false else
+if false then false else false ;;
+
+if (if false then true else true) then (if true then false else true) else
+false ;;
+
+if (if false then true else true) then (if true then false else true) else
+true ;;
+
+if (if false then true else true) then (if true then false else true) else
+if true then true else true ;;
+
+if (if false then true else true) then (if true then false else true) else
+if true then true else false ;;
+
+if (if false then true else true) then (if true then false else true) else
+if true then false else true ;;
+
+if (if false then true else true) then (if true then false else true) else
+if true then false else false ;;
+
+if (if false then true else true) then (if true then false else true) else
+if false then true else true ;;
+
+if (if false then true else true) then (if true then false else true) else
+if false then true else false ;;
+
+if (if false then true else true) then (if true then false else true) else
+if false then false else true ;;
+
+if (if false then true else true) then (if true then false else true) else
+if false then false else false ;;
+
+if (if false then true else true) then (if true then false else false) else
+false ;;
+
+if (if false then true else true) then (if true then false else false) else
+true ;;
+
+if (if false then true else true) then (if true then false else false) else
+if true then true else true ;;
+
+if (if false then true else true) then (if true then false else false) else
+if true then true else false ;;
+
+if (if false then true else true) then (if true then false else false) else
+if true then false else true ;;
+
+if (if false then true else true) then (if true then false else false) else
+if true then false else false ;;
+
+if (if false then true else true) then (if true then false else false) else
+if false then true else true ;;
+
+if (if false then true else true) then (if true then false else false) else
+if false then true else false ;;
+
+if (if false then true else true) then (if true then false else false) else
+if false then false else true ;;
+
+if (if false then true else true) then (if true then false else false) else
+if false then false else false ;;
+
+if (if false then true else true) then (if false then true else false) else
+false ;;
+
+if (if false then true else true) then (if false then true else false) else
+true ;;
+
+if (if false then true else true) then (if false then true else false) else
+if true then true else true ;;
+
+if (if false then true else true) then (if false then true else false) else
+if true then true else false ;;
+
+if (if false then true else true) then (if false then true else false) else
+if true then false else true ;;
+
+if (if false then true else true) then (if false then true else false) else
+if true then false else false ;;
+
+if (if false then true else true) then (if false then true else false) else
+if false then true else true ;;
+
+if (if false then true else true) then (if false then true else false) else
+if false then true else false ;;
+
+if (if false then true else true) then (if false then true else false) else
+if false then false else true ;;
+
+if (if false then true else true) then (if false then true else false) else
+if false then false else false ;;
+
+if (if false then true else true) then (if false then false else false) else
+false ;;
+
+if (if false then true else true) then (if false then false else false) else
+true ;;
+
+if (if false then true else true) then (if false then false else false) else
+if true then true else true ;;
+
+if (if false then true else true) then (if false then false else false) else
+if true then true else false ;;
+
+if (if false then true else true) then (if false then false else false) else
+if true then false else true ;;
+
+if (if false then true else true) then (if false then false else false) else
+if true then false else false ;;
+
+if (if false then true else true) then (if false then false else false) else
+if false then true else true ;;
+
+if (if false then true else true) then (if false then false else false) else
+if false then true else false ;;
+
+if (if false then true else true) then (if false then false else false) else
+if false then false else true ;;
+
+if (if false then true else true) then (if false then false else false) else
+if false then false else false ;;
+
+if (if false then true else false) then false else false ;;
+
+if (if false then true else false) then false else
+if true then false else true ;;
+
+if (if false then true else false) then false else
+if true then false else false ;;
+
+if (if false then true else false) then false else
+if false then true else false ;;
+
+if (if false then true else false) then false else
+if false then false else false ;;
+
+if (if false then true else false) then true else false ;;
+
+if (if false then true else false) then true else
+if true then false else true ;;
+
+if (if false then true else false) then true else
+if true then false else false ;;
+
+if (if false then true else false) then true else
+if false then true else false ;;
+
+if (if false then true else false) then true else
+if false then false else false ;;
+
+if (if false then true else false) then (if true then true else true) else
+false ;;
+
+if (if false then true else false) then (if true then true else true) else
+if true then false else true ;;
+
+if (if false then true else false) then (if true then true else true) else
+if true then false else false ;;
+
+if (if false then true else false) then (if true then true else true) else
+if false then true else false ;;
+
+if (if false then true else false) then (if true then true else true) else
+if false then false else false ;;
+
+if (if false then true else false) then (if true then true else false) else
+false ;;
+
+if (if false then true else false) then (if true then true else false) else
+if true then false else true ;;
+
+if (if false then true else false) then (if true then true else false) else
+if true then false else false ;;
+
+if (if false then true else false) then (if true then true else false) else
+if false then true else false ;;
+
+if (if false then true else false) then (if true then true else false) else
+if false then false else false ;;
+
+if (if false then true else false) then (if true then false else true) else
+false ;;
+
+if (if false then true else false) then (if true then false else true) else
+if true then false else true ;;
+
+if (if false then true else false) then (if true then false else true) else
+if true then false else false ;;
+
+if (if false then true else false) then (if true then false else true) else
+if false then true else false ;;
+
+if (if false then true else false) then (if true then false else true) else
+if false then false else false ;;
+
+if (if false then true else false) then (if true then false else false) else
+false ;;
+
+if (if false then true else false) then (if true then false else false) else
+if true then false else true ;;
+
+if (if false then true else false) then (if true then false else false) else
+if true then false else false ;;
+
+if (if false then true else false) then (if true then false else false) else
+if false then true else false ;;
+
+if (if false then true else false) then (if true then false else false) else
+if false then false else false ;;
+
+if (if false then true else false) then (if false then true else true) else
+false ;;
+
+if (if false then true else false) then (if false then true else true) else
+if true then false else true ;;
+
+if (if false then true else false) then (if false then true else true) else
+if true then false else false ;;
+
+if (if false then true else false) then (if false then true else true) else
+if false then true else false ;;
+
+if (if false then true else false) then (if false then true else true) else
+if false then false else false ;;
+
+if (if false then true else false) then (if false then true else false) else
+false ;;
+
+if (if false then true else false) then (if false then true else false) else
+if true then false else true ;;
+
+if (if false then true else false) then (if false then true else false) else
+if true then false else false ;;
+
+if (if false then true else false) then (if false then true else false) else
+if false then true else false ;;
+
+if (if false then true else false) then (if false then true else false) else
+if false then false else false ;;
+
+if (if false then true else false) then (if false then false else true) else
+false ;;
+
+if (if false then true else false) then (if false then false else true) else
+if true then false else true ;;
+
+if (if false then true else false) then (if false then false else true) else
+if true then false else false ;;
+
+if (if false then true else false) then (if false then false else true) else
+if false then true else false ;;
+
+if (if false then true else false) then (if false then false else true) else
+if false then false else false ;;
+
+if (if false then true else false) then (if false then false else false) else
+false ;;
+
+if (if false then true else false) then (if false then false else false) else
+if true then false else true ;;
+
+if (if false then true else false) then (if false then false else false) else
+if true then false else false ;;
+
+if (if false then true else false) then (if false then false else false) else
+if false then true else false ;;
+
+if (if false then true else false) then (if false then false else false) else
+if false then false else false ;;
+
+if (if false then false else true) then false else false ;;
+
+if (if false then false else true) then false else true ;;
+
+if (if false then false else true) then false else
+if true then true else true ;;
+
+if (if false then false else true) then false else
+if true then true else false ;;
+
+if (if false then false else true) then false else
+if true then false else true ;;
+
+if (if false then false else true) then false else
+if true then false else false ;;
+
+if (if false then false else true) then false else
+if false then true else true ;;
+
+if (if false then false else true) then false else
+if false then true else false ;;
+
+if (if false then false else true) then false else
+if false then false else true ;;
+
+if (if false then false else true) then false else
+if false then false else false ;;
+
+if (if false then false else true) then (if true then false else true) else
+false ;;
+
+if (if false then false else true) then (if true then false else true) else
+true ;;
+
+if (if false then false else true) then (if true then false else true) else
+if true then true else true ;;
+
+if (if false then false else true) then (if true then false else true) else
+if true then true else false ;;
+
+if (if false then false else true) then (if true then false else true) else
+if true then false else true ;;
+
+if (if false then false else true) then (if true then false else true) else
+if true then false else false ;;
+
+if (if false then false else true) then (if true then false else true) else
+if false then true else true ;;
+
+if (if false then false else true) then (if true then false else true) else
+if false then true else false ;;
+
+if (if false then false else true) then (if true then false else true) else
+if false then false else true ;;
+
+if (if false then false else true) then (if true then false else true) else
+if false then false else false ;;
+
+if (if false then false else true) then (if true then false else false) else
+false ;;
+
+if (if false then false else true) then (if true then false else false) else
+true ;;
+
+if (if false then false else true) then (if true then false else false) else
+if true then true else true ;;
+
+if (if false then false else true) then (if true then false else false) else
+if true then true else false ;;
+
+if (if false then false else true) then (if true then false else false) else
+if true then false else true ;;
+
+if (if false then false else true) then (if true then false else false) else
+if true then false else false ;;
+
+if (if false then false else true) then (if true then false else false) else
+if false then true else true ;;
+
+if (if false then false else true) then (if true then false else false) else
+if false then true else false ;;
+
+if (if false then false else true) then (if true then false else false) else
+if false then false else true ;;
+
+if (if false then false else true) then (if true then false else false) else
+if false then false else false ;;
+
+if (if false then false else true) then (if false then true else false) else
+false ;;
+
+if (if false then false else true) then (if false then true else false) else
+true ;;
+
+if (if false then false else true) then (if false then true else false) else
+if true then true else true ;;
+
+if (if false then false else true) then (if false then true else false) else
+if true then true else false ;;
+
+if (if false then false else true) then (if false then true else false) else
+if true then false else true ;;
+
+if (if false then false else true) then (if false then true else false) else
+if true then false else false ;;
+
+if (if false then false else true) then (if false then true else false) else
+if false then true else true ;;
+
+if (if false then false else true) then (if false then true else false) else
+if false then true else false ;;
+
+if (if false then false else true) then (if false then true else false) else
+if false then false else true ;;
+
+if (if false then false else true) then (if false then true else false) else
+if false then false else false ;;
+
+if (if false then false else true) then (if false then false else false) else
+false ;;
+
+if (if false then false else true) then (if false then false else false) else
+true ;;
+
+if (if false then false else true) then (if false then false else false) else
+if true then true else true ;;
+
+if (if false then false else true) then (if false then false else false) else
+if true then true else false ;;
+
+if (if false then false else true) then (if false then false else false) else
+if true then false else true ;;
+
+if (if false then false else true) then (if false then false else false) else
+if true then false else false ;;
+
+if (if false then false else true) then (if false then false else false) else
+if false then true else true ;;
+
+if (if false then false else true) then (if false then false else false) else
+if false then true else false ;;
+
+if (if false then false else true) then (if false then false else false) else
+if false then false else true ;;
+
+if (if false then false else true) then (if false then false else false) else
+if false then false else false ;;
+
+if (if false then false else false) then false else false ;;
+
+if (if false then false else false) then false else
+if true then false else true ;;
+
+if (if false then false else false) then false else
+if true then false else false ;;
+
+if (if false then false else false) then false else
+if false then true else false ;;
+
+if (if false then false else false) then false else
+if false then false else false ;;
+
+if (if false then false else false) then true else false ;;
+
+if (if false then false else false) then true else
+if true then false else true ;;
+
+if (if false then false else false) then true else
+if true then false else false ;;
+
+if (if false then false else false) then true else
+if false then true else false ;;
+
+if (if false then false else false) then true else
+if false then false else false ;;
+
+if (if false then false else false) then (if true then true else true) else
+false ;;
+
+if (if false then false else false) then (if true then true else true) else
+if true then false else true ;;
+
+if (if false then false else false) then (if true then true else true) else
+if true then false else false ;;
+
+if (if false then false else false) then (if true then true else true) else
+if false then true else false ;;
+
+if (if false then false else false) then (if true then true else true) else
+if false then false else false ;;
+
+if (if false then false else false) then (if true then true else false) else
+false ;;
+
+if (if false then false else false) then (if true then true else false) else
+if true then false else true ;;
+
+if (if false then false else false) then (if true then true else false) else
+if true then false else false ;;
+
+if (if false then false else false) then (if true then true else false) else
+if false then true else false ;;
+
+if (if false then false else false) then (if true then true else false) else
+if false then false else false ;;
+
+if (if false then false else false) then (if true then false else true) else
+false ;;
+
+if (if false then false else false) then (if true then false else true) else
+if true then false else true ;;
+
+if (if false then false else false) then (if true then false else true) else
+if true then false else false ;;
+
+if (if false then false else false) then (if true then false else true) else
+if false then true else false ;;
+
+if (if false then false else false) then (if true then false else true) else
+if false then false else false ;;
+
+if (if false then false else false) then (if true then false else false) else
+false ;;
+
+if (if false then false else false) then (if true then false else false) else
+if true then false else true ;;
+
+if (if false then false else false) then (if true then false else false) else
+if true then false else false ;;
+
+if (if false then false else false) then (if true then false else false) else
+if false then true else false ;;
+
+if (if false then false else false) then (if true then false else false) else
+if false then false else false ;;
+
+if (if false then false else false) then (if false then true else true) else
+false ;;
+
+if (if false then false else false) then (if false then true else true) else
+if true then false else true ;;
+
+if (if false then false else false) then (if false then true else true) else
+if true then false else false ;;
+
+if (if false then false else false) then (if false then true else true) else
+if false then true else false ;;
+
+if (if false then false else false) then (if false then true else true) else
+if false then false else false ;;
+
+if (if false then false else false) then (if false then true else false) else
+false ;;
+
+if (if false then false else false) then (if false then true else false) else
+if true then false else true ;;
+
+if (if false then false else false) then (if false then true else false) else
+if true then false else false ;;
+
+if (if false then false else false) then (if false then true else false) else
+if false then true else false ;;
+
+if (if false then false else false) then (if false then true else false) else
+if false then false else false ;;
+
+if (if false then false else false) then (if false then false else true) else
+false ;;
+
+if (if false then false else false) then (if false then false else true) else
+if true then false else true ;;
+
+if (if false then false else false) then (if false then false else true) else
+if true then false else false ;;
+
+if (if false then false else false) then (if false then false else true) else
+if false then true else false ;;
+
+if (if false then false else false) then (if false then false else true) else
+if false then false else false ;;
+
+if (if false then false else false) then (if false then false else false)
+else false ;;
+
+if (if false then false else false) then (if false then false else false)
+else if true then false else true ;;
+
+if (if false then false else false) then (if false then false else false)
+else if true then false else false ;;
+
+if (if false then false else false) then (if false then false else false)
+else if false then true else false ;;
+
+if (if false then false else false) then (if false then false else false)
+else if false then false else false ;;
+
+(\x0. false) false ;;
+
+(\x0. false) true ;;
+
+(\x0. false) (\x0. true) ;;
+
+(\x0. false) (\x0. false) ;;
+
+(\x0. false) (\x0. x0) ;;
+
+(\x0. false) (if true then true else true) ;;
+
+(\x0. false) (if true then true else false) ;;
+
+(\x0. false) (if true then false else true) ;;
+
+(\x0. false) (if true then false else false) ;;
+
+(\x0. false) (if false then true else true) ;;
+
+(\x0. false) (if false then true else false) ;;
+
+(\x0. false) (if false then false else true) ;;
+
+(\x0. false) (if false then false else false) ;;
+
+(\x0. x0) false ;;
+
+(\x0. x0) (if true then false else true) ;;
+
+(\x0. x0) (if true then false else false) ;;
+
+(\x0. x0) (if false then true else false) ;;
+
+(\x0. x0) (if false then false else false) ;;
+

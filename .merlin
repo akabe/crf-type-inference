@@ -1,0 +1,4 @@
+PKG gsl
+PKG slap
+S lib
+B lib

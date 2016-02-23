@@ -1,0 +1,28 @@
+(* abs *)
+
+\x0. x0 ;;
+
+\x0. false ;;
+
+\x0. true ;;
+
+(* true *)
+
+if false then false else true ;;
+
+if false then true else true ;;
+
+if true then true else false ;;
+
+if true then true else true ;;
+
+(* false *)
+
+if false then false else false ;;
+
+if false then true else false ;;
+
+if true then false else false ;;
+
+if true then false else true ;;
+
