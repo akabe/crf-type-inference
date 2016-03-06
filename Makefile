@@ -15,17 +15,17 @@ $(BYTE): $(OBJS)
 clean::
 	rm -f $(TARGET) $(BYTE) $(DEPS) lambdaParser.mli lambdaParser.output
 
-lambda.ml: ../lib/lambda.ml
-	cp $^ $@
+# lambda.ml: ../lib/lambda.ml
+# 	cp $^ $@
 
-simpleType.ml: ../lib/simpleType.ml
-	cp $^ $@
+# simpleType.ml: ../lib/simpleType.ml
+# 	cp $^ $@
 
-lambdaParser.mly: ../lib/lambdaParser.mly
-	cp $^ $@
+# lambdaParser.mly: ../lib/lambdaParser.mly
+# 	cp $^ $@
 
-lambdaLexer.mll: ../lib/lambdaLexer.mll
-	cp $^ $@
+# lambdaLexer.mll: ../lib/lambdaLexer.mll
+# 	cp $^ $@
 
 ##
 ## Common variables

@@ -18,11 +18,11 @@ struct
 
   let weights =
     [|
-      0.261888; -0.261888;
-      0.267968; -0.267968;
-      0.114038; 0.114038; -0.00319744; -0.00319744;
-      0.0576576; 0.0576576; -0.00219648; -0.00219648;
-      0.259904; 0.259904; 0.259904; 0.254464; -0.259904; -0.259904; -0.259904
+      1.3052; -1.3052;
+      1.3346; -1.3346;
+      0.56469; 0.56469; -0.015712; -0.015712;
+      0.28224; 0.28224; -0.010752; -0.010752;
+      1.2934; 1.2934; 1.2934; 1.269; -1.2934; -1.2934; -1.2934;
     |]
 
   let feature e =
@@ -41,14 +41,14 @@ struct
         if t = Tbool then put 3; (* correct *)
         if t <> Tbool then put 4; (* wrong *)
       | { desc = Eabs (_, t1, { typ = t2; _ }); typ = t } ->
-        if eqarr1 t1 t then put 5; (* week *)
-        if eqarr2 t2 t then put 6; (* week *)
+        if eqarr1 t1 t then put 5; (* weak *)
+        if eqarr2 t2 t then put 6; (* weak *)
         if t1 = Tarrow (t2, t) then put 7; (* wrong *)
         if t2 = Tarrow (t1, t) then put 8; (* wrong *)
       | { desc = Eapp ({ typ = t1; _ },
                        { typ = t2; _ }); typ = t } ->
-        if eqarr1 t2 t1 then put 9; (* week *)
-        if eqarr2 t t1 then put 10; (* week *)
+        if eqarr1 t2 t1 then put 9; (* weak *)
+        if eqarr2 t t1 then put 10; (* weak *)
         if t = Tarrow (t1, t2) then put 11; (* wrong *)
         if t2 = Tarrow (t1, t) then put 12; (* wrong *)
       | { desc = Eif ({ typ = t1; _ },

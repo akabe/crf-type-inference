@@ -46,7 +46,10 @@
       <h1 class="page-header">機械学習による関数型ブーリアンプログラムの型推論</h1>
       <p><a href="http://www.jssst.or.jp/">JSSST</a>
         <a href="http://logic.cs.tsukuba.ac.jp/ppl2016/">PPL2016</a>
-        カテゴリ3（ポスター・デモ発表）</p>
+        カテゴリ3（ポスター・デモ発表）
+        <a href="https://github.com/akabe/ppl2016/raw/master/poster.pdf"
+           type="application/pdf">poster.pdf</a>
+      </p>
       <p>静的型付けはプログラムの解析や誤りの検出に有用と考えられているが、一般的に型エラーの位置は曖昧で論理的には一意に特定できない、高度な型システムでは厳密な型検査や型推論が決定不能である、といった問題がある。一方、自然言語処理では多数の実例から統計的手法によりヒューリスティクスを獲得する機械学習が有効であることが知られている。本研究では、通常は形式論理的手法にもとづく型システムに対し、機械学習の統計的手法を導入するアプローチを実験する。具体的には、機械学習のモデルの 1 つである条件付き確率場を用い、簡単な例としてブーリアンラムダ式の単純型推論を試みた。その結果、正しい型付け規則が学習により自動的に選択されることを確認するとともに、通常の形式論理的手法とは異なる規則も学習する場合があることを観察した。</p>
       <p>発表では、本研究の手法に基づき「well-typedらしさ（あるいはill-typedらしさ）」を構文木のノードごとに実数値でスコア化した一種のsoft typingの<a href="#demo">デモ</a>も行う。</p>
 
@@ -58,33 +61,106 @@ E   ::=    true                      (* 真 *)
       |    \x. E                     (* ラムダ抽象 *)
       |    E1 E2                     (* 関数適用 *)
       |    if E1 then E2 else E3     (* 条件分岐 *)</pre>
-      <p>型注釈：</p>
-      <pre>
-T   ::=    Bool
-      |    Bool -> Bool
-      |    Bool -> Bool -> Bool
-      |    (Bool -> Bool) -> Bool</pre>
+      <p>予測可能な型注釈：
+        <ul>
+          <li><code>Bool</code></li>
+          <li><code>Bool -> Bool</code></li>
+          <li><code>Bool -> Bool -> Bool</code></li>
+          <li><code>(Bool -> Bool) -> Bool</code></li>
+        </ul>
+      </p>
 
       <section>
         <h2 class="page-link" id="demo">デモ</h2>
-        <p>画面上のテキストボックスに入力されたラムダ式の型推論を行い、
-        構文木の頂点ごとに型と点数（重みと特徴の内積）を表示する。</p>
+        <p>画面最上部のテキストボックスに入力されたラムダ式の型推論を行い、
+          点数を最大化する型注釈を求める。
+          また、構文木の頂点ごとに型と点数（特徴の重み付き和）を表示する。</p>
         <table class="table table-hover" style="width: auto;">
           <tr>
-            <td>Log potential (score)</td>
+            <td>合計得点（対数ポテンシャル）</td>
             <td id="log-potential">N/A</td>
           </tr>
           <tr>
-            <td>Potential</td>
+            <td>ポテンシャル（正規化されていない条件付き確率）</td>
             <td id="potential">N/A</td>
           </tr>
           <tr>
-            <td>Conditional probability</td>
+            <td>型無しラムダ式が与えられた時の型注釈の条件付き確率</td>
             <td id="probability">N/A</td>
           </tr>
         </table>
         <a id="download">Download .svg</a>
         <div id="graph"></div>
+      </section>
+
+      <sction>
+        <h2 class="page-link" id="features">特徴関数</h2>
+        <p>本研究では以下のような単純型付け規則を弱めた規則を特徴として用いた（T-True, T-False を除く）。
+          なお、型付け規則において型環境を陽に考慮する代わりに、
+          型注釈付き構文木において同一変数の頂点をマージすることで、
+          同一変数には1つの型しか割り当てられないことを保証している。
+          角括弧内は学習（事前ガウシアン分布の分散が 0.1 の
+          対数事後確率を最急降下法で最適化）により得られた重みである。
+          弱めた規則の重みは正となり、型付けに有用な規則であることが学習された。
+          <pre>
+    T-True -------------                   [1.3052]            T-False --------------               [1.3346]
+            true : Bool                                                 false : Bool
+
+             x : T1   E2 : T2                                           x : T1   E2 : T2
+T-WeakAbs1 --------------------            [0.5647]         T-WeakAbs2 --------------------         [0.56469]
+            \x. E2 : T1 -> T2'                                          \x. E2 : T1' -> T2
+
+            E1 : T' -> T''   E2 : T'                                     E1 : T' -> T   E2 : T'
+T-WeakApp1 --------------------------      [0.2822]         T-WeakApp2 -------------------------    [0.2822]
+                  E1 E2 : T                                                    E1 E2 : T
+
+            E1 : Bool   E2 : T2   E3 : T2                               E1 : T1   E2 : T   E3 : T2
+ T-WeakIf1 ------------------------------- [1.2934]          T-WeakIf2 ---------------------------- [1.2934]
+              if E1 then E2 else E3 : T                                 if E1 then E2 else E3 : T
+
+             E1 : T1   E2 : T2   E3 : T                                 E1 : T1   E2 : T'   E3 : T'
+ T-WeakIf3 ------------------------------- [1.2934]          T-WeakIf4 ---------------------------- [1.269]
+             if E1 then E2 else E3 : T                                  if E1 then E2 else E3 : T</pre>
+          また、学習により常に型安全ではない（つまり、規則に現れる型変数をどのように具体化しても単純型付け規則に一致しない）ような規則が排除されるか確認するため、以下の規則も考慮した。
+          結果として、これら規則の重みは負となり、型付けに有害であることが学習された。
+          <pre>
+ T-True' ---------- (T != Bool) [-1.3052]        T-False' ----------- (T != Bool)   [-1.3346]
+          true : T                                         false : T
+
+         x : T' -> T   E2 : T'                             x : T'   E2 : T' -> T
+T-Abs1' ----------------------- [-0.0157]         T-Abs2' -----------------------   [-0.0157]
+             \x. E2 : T                                        \x. E2 : T
+
+         E1 : T1   E2 : T2                                 E1 : T1   E2 : T1 -> T
+T-App1' -------------------     [-0.0108]         T-App2' ------------------------- [-0.0108]
+         E1 E2 : T1 -> T2                                        E1 E2 : T
+
+         E1 : T1   E2 : T2   E3 : T2
+ T-If1' ----------------------------- (T1 != Bool) [-1.2934]
+          if E1 then E2 else E3 : T
+
+         E1 : T1   E2 : T2   E3 : T2
+ T-If2' ----------------------------- (T != T2)    [-1.2934]
+          if E1 then E2 else E3 : T
+
+         E1 : T1   E2 : T2   E3 : T2
+ T-If2' ----------------------------- (T != T3)    [-1.2934]
+          if E1 then E2 else E3 : T</pre>
+        </p>
+      </sction>
+
+      <section>
+        <h2 class="page-link" id="training-set">訓練集合</h2>
+        <p><a href="training_set.txt">training_set.txt</a></p>
+        <p>構文木の深さが 6 以下のブーリアンラムダ式 800 個を訓練集合として用いた。
+          これらは<a href="https://github.com/akabe/crf-type-inference/tree/master/codegen">codegen.ml</a>
+          により機械的に生成されたラムダ式である。
+          訓練集合中の全ての式が型付け可能であり、各部分式は
+          <code>Bool</code>, <code>Bool -> Bool</code>,
+          <code>Bool -> Bool -> Bool</code>,
+          <code>(Bool -> Bool) -> Bool</code>
+          のいずれかの型を持つ。
+          本研究では型付け不可能なラムダ式を訓練集合に含めていない。</p>
       </section>
     </div>
   </body>
